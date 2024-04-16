@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=5 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://nafkjj5m1h7q" path="res://backstage.jpg" id="1_jss84"]
+[ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
 [ext_resource type="Texture2D" uid="uid://dpted78kifhjw" path="res://pngimg.com - circle_PNG49.png" id="2_o50nc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tedlw"]
@@ -9,21 +10,17 @@ radius = 24.0
 [node name="MinigameScene" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
+position = Vector2(579, 323)
+scale = Vector2(1.88562, 1.59314)
 texture = ExtResource("1_jss84")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Background"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/StaticBody2D"]
 
-[node name="Background2" type="Sprite2D" parent="."]
-texture = ExtResource("1_jss84")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Background2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background2/StaticBody2D"]
-
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(-1, -100)
+position = Vector2(557, 234)
+script = ExtResource("2_l1et3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(1, 101)
