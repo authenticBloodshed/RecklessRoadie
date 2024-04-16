@@ -3,7 +3,7 @@ extends CharacterBody2D
 const UP = Vector2(0, -1)
 const GRAVITY = 20
 const MAX_FALL_SPEED = 500
-const JUMP_FORCE = 300
+const JUMP_FORCE = 50
 
 var motion = Vector2()
 
