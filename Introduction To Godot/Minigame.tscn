@@ -1,11 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=8 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://nafkjj5m1h7q" path="res://backstage.jpg" id="1_jss84"]
 [ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
 [ext_resource type="Texture2D" uid="uid://dpted78kifhjw" path="res://pngimg.com - circle_PNG49.png" id="2_o50nc"]
+[ext_resource type="Texture2D" uid="uid://bbew7vrtkuahg" path="res://square.png" id="4_baiss"]
+[ext_resource type="Script" path="res://Target.gd" id="5_l3ho7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tedlw"]
 radius = 24.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5cec"]
+size = Vector2(198.89, 200.671)
 
 [node name="MinigameScene" type="Node2D"]
 
@@ -30,3 +35,19 @@ texture = ExtResource("2_o50nc")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(1, 101)
 shape = SubResource("CircleShape2D_tedlw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(584, 321)
+
+[node name="Target" type="Sprite2D" parent="."]
+position = Vector2(169, 151)
+scale = Vector2(0.422343, 0.189364)
+texture = ExtResource("4_baiss")
+script = ExtResource("5_l3ho7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Target"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target/StaticBody2D"]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1.00423, 1.02802)
+shape = SubResource("RectangleShape2D_m5cec")
