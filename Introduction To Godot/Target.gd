@@ -1,6 +1,6 @@
 extends Sprite2D
 
-var random = Vector2(0, randf_range(-15, 15))
+var random = Vector2(0, randf_range(-20, 20))
 var motion = Vector2(0, -1)
 
 # Called when the node enters the scene tree for the first time.
@@ -13,5 +13,5 @@ func _process(delta):
 	# Applies motion
 	position += random * delta
 	
-	if position.y > 583 or position.y < 65:
+	if position.y > 569 or position.y < 65:
 		random *= -1

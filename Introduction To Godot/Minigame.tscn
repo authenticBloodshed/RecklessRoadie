@@ -1,34 +1,58 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=11 format=3 uid="uid://b8lg3dxh6xjmh"]
 
-[ext_resource type="Texture2D" uid="uid://nafkjj5m1h7q" path="res://backstage.jpg" id="1_jss84"]
+[ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
 [ext_resource type="Texture2D" uid="uid://dpted78kifhjw" path="res://pngimg.com - circle_PNG49.png" id="2_o50nc"]
-[ext_resource type="Texture2D" uid="uid://bsgigqcxnjcoq" path="res://red square.jpg" id="4_12hys"]
 [ext_resource type="Texture2D" uid="uid://bbew7vrtkuahg" path="res://square.png" id="4_baiss"]
 [ext_resource type="Script" path="res://Target.gd" id="5_l3ho7"]
+[ext_resource type="Texture2D" uid="uid://bc0kpcm4syh5g" path="res://luz_png__1__by_martismiler_d5u57b9-fullview.png" id="7_k8dnp"]
+[ext_resource type="Texture2D" uid="uid://b1i2o8gnpc3ts" path="res://bar.png" id="8_jl3x0"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_tedlw"]
-radius = 24.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ppky"]
-size = Vector2(300.004, 2.85718)
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_elyw1"]
+polygon = PackedVector2Array(-150.002, -84.2262, -150.002, -74.1071, -150.002, -57.4405, -150.002, -34.2262, -150.002, -4.16667, -150.002, 17.8571, -150.002, 39.5833, -150.002, 72.619, -150.002, 83.9286, 146.877, 83.9286, 150.002, 83.9286, 150.002, 78.5714, 150.002, 70.5357, 150.002, 63.9881, 150.002, 55.3571, 150.002, 46.7262, 150.002, 37.5, 150.002, 31.5476, 150.002, 22.0238, 150.002, 13.3929, 150.002, 4.7619, 150.002, -3.57143, 150.002, -17.2619, 150.002, -27.6786, 150.002, -37.7976, 150.002, -48.2143, 150.002, -56.25, 150.002, -66.6667, 150.002, -76.4881, 150.002, -83.9286, -3.12506, -83.9286, -121.877, -83.9286)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5cec"]
 size = Vector2(198.89, 200.671)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_tedlw"]
+radius = 24.0
+
 [node name="MinigameScene" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(579, 323)
-scale = Vector2(1.88562, 1.59314)
-texture = ExtResource("1_jss84")
+position = Vector2(584.5, 322.5)
+scale = Vector2(0.601563, 0.606482)
+texture = ExtResource("1_xg5x0")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Background"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/StaticBody2D"]
 
+[node name="Bar" type="Sprite2D" parent="."]
+position = Vector2(170, 322)
+scale = Vector2(0.355957, 0.624677)
+texture = ExtResource("8_jl3x0")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Bar"]
+position = Vector2(2.80933, 4.80243)
+scale = Vector2(0.89897, 5.37878)
+occluder = SubResource("OccluderPolygon2D_elyw1")
+
+[node name="Target" type="Sprite2D" parent="."]
+position = Vector2(169, 324)
+scale = Vector2(0.422343, 0.189364)
+texture = ExtResource("4_baiss")
+script = ExtResource("5_l3ho7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Target"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target/StaticBody2D"]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1.00423, 1.02802)
+shape = SubResource("RectangleShape2D_m5cec")
+
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(557, 234)
+position = Vector2(167, 222)
 script = ExtResource("2_l1et3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
@@ -43,31 +67,10 @@ shape = SubResource("CircleShape2D_tedlw")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(584, 321)
 
-[node name="Bar" type="Sprite2D" parent="."]
-position = Vector2(170, 324)
-scale = Vector2(0.319995, 3.36)
-texture = ExtResource("4_12hys")
-
-[node name="Area2D" type="Area2D" parent="Bar"]
-scale = Vector2(1, 1)
-
-[node name="CollisionTop" type="CollisionShape2D" parent="Bar/Area2D"]
-position = Vector2(-6.10352e-05, -82.7381)
-shape = SubResource("RectangleShape2D_5ppky")
-
-[node name="CollisionBottom" type="CollisionShape2D" parent="Bar/Area2D"]
-position = Vector2(-6.10352e-05, 82.4405)
-shape = SubResource("RectangleShape2D_5ppky")
-
-[node name="Target" type="Sprite2D" parent="."]
-position = Vector2(169, 317)
-scale = Vector2(0.422343, 0.189364)
-texture = ExtResource("4_baiss")
-script = ExtResource("5_l3ho7")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Target"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Target/StaticBody2D"]
-position = Vector2(3.05176e-05, 0)
-scale = Vector2(1.00423, 1.02802)
-shape = SubResource("RectangleShape2D_m5cec")
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(1103, -1)
+scale = Vector2(-0.968748, 0.655818)
+color = Color(1, 1, 0.737255, 1)
+energy = 7.98
+texture = ExtResource("7_k8dnp")
+texture_scale = 3.13
