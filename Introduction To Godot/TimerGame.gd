@@ -16,6 +16,9 @@ func _on_timeout():
 			seconds = 60
 	seconds -= 1
 	$Label.text = str(minutes) + ":" + str(seconds)
+	
+	if seconds <= 0 and minutes <= 0:
+		$Label.text = "00:00"
 
 func Reset_Timer():
 	seconds = Dseconds
