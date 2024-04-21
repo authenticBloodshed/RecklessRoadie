@@ -19,3 +19,7 @@ func _physics_process(delta):
 	# Allows the player to jump
 	if Input.is_action_pressed("Jump"):
 		motion.y = -JUMP_FORCE
+
+
+func _on_area_2d_area_entered(area):
+	print("collided")
