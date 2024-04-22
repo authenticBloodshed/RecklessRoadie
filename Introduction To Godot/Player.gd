@@ -6,6 +6,7 @@ const MAX_FALL_SPEED = 500
 const JUMP_FORCE = 50
 
 var motion = Vector2()
+@export var winTimer: WinTimer
 
 func _physics_process(delta):
 	# Applies gravity
@@ -23,3 +24,8 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	print("collided")
+	winTimer.startTimer()
+	
+
+func _on_area_2d_area_exited(area):
+	winTimer.pauseTimer()

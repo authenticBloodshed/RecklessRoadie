@@ -16,5 +16,5 @@ func _process(delta):
 	if position.y > 569 or position.y < 65:
 		random *= -1
 		
-	if random == Vector2(0,0):
+	if abs(random.y) < 0.01:
 		random = Vector2(0,10)

@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=13 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
 [ext_resource type="Texture2D" uid="uid://dpted78kifhjw" path="res://pngimg.com - circle_PNG49.png" id="2_o50nc"]
 [ext_resource type="Texture2D" uid="uid://bbew7vrtkuahg" path="res://square.png" id="4_baiss"]
 [ext_resource type="Script" path="res://Target.gd" id="5_l3ho7"]
+[ext_resource type="Script" path="res://WinTimer.gd" id="7_5jj6a"]
 [ext_resource type="Texture2D" uid="uid://bc0kpcm4syh5g" path="res://luz_png__1__by_martismiler_d5u57b9-fullview.png" id="7_k8dnp"]
 [ext_resource type="Texture2D" uid="uid://b1i2o8gnpc3ts" path="res://bar.png" id="8_jl3x0"]
 [ext_resource type="Script" path="res://TimerGame.gd" id="8_m6r7t"]
@@ -54,9 +55,10 @@ position = Vector2(3.05176e-05, 0)
 scale = Vector2(1.00423, 1.02802)
 shape = SubResource("RectangleShape2D_m5cec")
 
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
 position = Vector2(167, 222)
 script = ExtResource("2_l1et3")
+winTimer = NodePath("Timer")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(1, 101)
@@ -70,6 +72,9 @@ position = Vector2(1, 101)
 shape = SubResource("CircleShape2D_tedlw")
 
 [node name="Timer" type="Timer" parent="Player"]
+wait_time = 15.0
+one_shot = true
+script = ExtResource("7_5jj6a")
 
 [node name="Label" type="Label" parent="Player/Timer"]
 offset_left = 79.0
@@ -88,16 +93,6 @@ energy = 7.98
 texture = ExtResource("7_k8dnp")
 texture_scale = 3.13
 
-[node name="SecondsLeft" type="RichTextLabel" parent="."]
-offset_left = 91.0
-offset_top = 38.0
-offset_right = 131.0
-offset_bottom = 78.0
-scale = Vector2(1.1012, 1.0948)
-bbcode_enabled = true
-text = "15"
-tab_size = 9
-
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 script = ExtResource("8_m6r7t")
@@ -110,4 +105,6 @@ offset_bottom = 31.0
 scale = Vector2(5.44, 3.24)
 
 [connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Player/Area2D" to="Player" method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="Player/Timer" to="Player/Timer" method="_on_timeout"]
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
