@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dver56n4kwo3v"]
+[gd_scene load_steps=4 format=3 uid="uid://dver56n4kwo3v"]
 
+[ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="1_ykyrh"]
 [ext_resource type="Script" path="res://StartButton.gd" id="2_bua3y"]
 
 [sub_resource type="Theme" id="Theme_qyarw"]
+default_font = ExtResource("1_ykyrh")
+default_font_size = 70
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -14,11 +17,11 @@ grow_vertical = 2
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 497.0
-offset_top = 561.0
-offset_right = 543.0
-offset_bottom = 592.0
-scale = Vector2(2.69012, 1.84681)
+offset_left = 470.0
+offset_top = 527.0
+offset_right = 602.0
+offset_bottom = 613.0
+scale = Vector2(1.91108, 1.12681)
 theme = SubResource("Theme_qyarw")
 text = "Start"
 script = ExtResource("2_bua3y")
