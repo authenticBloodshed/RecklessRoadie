@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dver56n4kwo3v"]
+
+[ext_resource type="Script" path="res://StartButton.gd" id="2_bua3y"]
+
+[sub_resource type="Theme" id="Theme_qyarw"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 561.0
+offset_right = 543.0
+offset_bottom = 592.0
+scale = Vector2(2.69012, 1.84681)
+theme = SubResource("Theme_qyarw")
+text = "Start"
+script = ExtResource("2_bua3y")
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
