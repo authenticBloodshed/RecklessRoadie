@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=14 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
@@ -12,6 +12,9 @@
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_elyw1"]
 polygon = PackedVector2Array(-150.002, -84.2262, -150.002, -74.1071, -150.002, -57.4405, -150.002, -34.2262, -150.002, -4.16667, -150.002, 17.8571, -150.002, 39.5833, -150.002, 72.619, -150.002, 83.9286, 146.877, 83.9286, 150.002, 83.9286, 150.002, 78.5714, 150.002, 70.5357, 150.002, 63.9881, 150.002, 55.3571, 150.002, 46.7262, 150.002, 37.5, 150.002, 31.5476, 150.002, 22.0238, 150.002, 13.3929, 150.002, 4.7619, 150.002, -3.57143, 150.002, -17.2619, 150.002, -27.6786, 150.002, -37.7976, 150.002, -48.2143, 150.002, -56.25, 150.002, -66.6667, 150.002, -76.4881, 150.002, -83.9286, -3.12506, -83.9286, -121.877, -83.9286)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skqbh"]
+size = Vector2(266.886, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5cec"]
 size = Vector2(198.89, 200.671)
@@ -39,6 +42,18 @@ texture = ExtResource("8_jl3x0")
 position = Vector2(2.80933, 4.80243)
 scale = Vector2(0.89897, 5.37878)
 occluder = SubResource("OccluderPolygon2D_elyw1")
+
+[node name="Top" type="Area2D" parent="Bar" groups=["boundary"]]
+
+[node name="TopCollision" type="CollisionShape2D" parent="Bar/Top"]
+position = Vector2(2.80933, -440.228)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Bottom" type="Area2D" parent="Bar" groups=["boundary"]]
+
+[node name="BottomCollision" type="CollisionShape2D" parent="Bar/Bottom"]
+position = Vector2(2.80933, 440.227)
+shape = SubResource("RectangleShape2D_skqbh")
 
 [node name="Target" type="Sprite2D" parent="."]
 position = Vector2(169, 324)
@@ -86,7 +101,7 @@ offset_bottom = 62.0
 position = Vector2(584, 321)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(1103, -1)
+position = Vector2(1131, -1)
 scale = Vector2(-0.968748, 0.655818)
 color = Color(1, 1, 0.737255, 1)
 energy = 7.98

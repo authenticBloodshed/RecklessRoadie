@@ -24,7 +24,11 @@ func _physics_process(delta):
 
 func _on_area_2d_area_entered(area):
 	print("collided")
-	winTimer.startTimer()
+	if area.is_in_group("tagret"):
+		winTimer.startTimer()
+	
+	if area.is_in_group("boundary"):
+		motion.y *= -1
 	
 
 func _on_area_2d_area_exited(area):
