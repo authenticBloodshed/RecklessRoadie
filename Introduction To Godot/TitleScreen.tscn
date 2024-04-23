@@ -1,13 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://dver56n4kwo3v"]
+[gd_scene load_steps=11 format=3 uid="uid://dver56n4kwo3v"]
 
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="1_ykyrh"]
 [ext_resource type="Script" path="res://StartButton.gd" id="2_bua3y"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_vj2fm"]
 [ext_resource type="FontFile" uid="uid://lyh0tftt7x8e" path="res://Fontspring-DEMO-prettyboy-semibold.otf" id="4_ht25a"]
 
+[sub_resource type="Theme" id="Theme_yvf81"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdoly"]
+bg_color = Color(1, 1, 1, 1)
+
 [sub_resource type="Theme" id="Theme_qyarw"]
 default_font = ExtResource("1_ykyrh")
-default_font_size = 70
+default_font_size = 69
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3xi5o"]
 
 [sub_resource type="Theme" id="Theme_10ssr"]
 default_font = ExtResource("3_vj2fm")
@@ -25,38 +32,70 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="StartButton" type="Button" parent="."]
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(0.180392, 0.192157, 0.32549, 1)
 layout_mode = 0
-offset_left = 450.0
-offset_top = 527.0
-offset_right = 582.0
-offset_bottom = 613.0
-scale = Vector2(1.91108, 1.12681)
+offset_left = -824.0
+offset_top = -252.0
+offset_right = -784.0
+offset_bottom = -212.0
+scale = Vector2(105.25, 45.3434)
+theme = SubResource("Theme_yvf81")
+theme_override_styles/panel = SubResource("StyleBoxFlat_sdoly")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -86.0
+offset_right = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.897156, 0.601268)
 theme = SubResource("Theme_qyarw")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3xi5o")
 text = "Start"
 script = ExtResource("2_bua3y")
 
 [node name="Story" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 374.0
-offset_top = 37.0
-offset_right = 753.0
-offset_bottom = 208.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -189.5
+offset_top = 45.0
+offset_right = 189.5
+offset_bottom = 216.0
+grow_horizontal = 2
 theme = SubResource("Theme_10ssr")
-theme_override_colors/default_color = Color(0.713726, 0.521569, 0.027451, 1)
+theme_override_colors/default_color = Color(0.92549, 0.682353, 0.0705882, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.321569)
 theme_override_constants/shadow_outline_size = 10
 bbcode_enabled = true
 text = "[center]Oh no! Kris forgot to tune his guitar..... It wouldn't hurt if I.... you know... tried, right? Yeah. Yeah I'm sure that will be fine. I tuned a guitar before! Three years ago....."
 
-[node name="rules" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 293.0
-offset_top = 309.0
-offset_right = 861.0
-offset_bottom = 480.0
+[node name="Rules" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -275.0
+offset_top = -341.0
+offset_right = 275.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 0
 theme = SubResource("Theme_10ssr")
-theme_override_colors/default_color = Color(0.713726, 0.521569, 0.027451, 1)
+theme_override_colors/default_color = Color(0.92549, 0.682353, 0.0705882, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.321569)
 theme_override_constants/shadow_outline_size = 10
 bbcode_enabled = true
 text = "[center] Align the red circle with the white square to tune the guitar.  You need to tune six strings, each one increasing in difficulty. If the timer runs out before all strings are tuned, Kris's guitar won't be tuned! So make sure you give it your all! Your reputation is on the line..."
@@ -68,6 +107,9 @@ offset_top = 246.0
 offset_right = 694.0
 offset_bottom = 321.0
 theme = SubResource("Theme_jrqtx")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 3
+theme_override_constants/outline_size = 7
 bbcode_enabled = true
 text = "[center] How to play"
 
