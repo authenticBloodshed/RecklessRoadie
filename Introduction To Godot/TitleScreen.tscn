@@ -1,11 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://dver56n4kwo3v"]
+[gd_scene load_steps=8 format=3 uid="uid://dver56n4kwo3v"]
 
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="1_ykyrh"]
 [ext_resource type="Script" path="res://StartButton.gd" id="2_bua3y"]
+[ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_vj2fm"]
+[ext_resource type="FontFile" uid="uid://lyh0tftt7x8e" path="res://Fontspring-DEMO-prettyboy-semibold.otf" id="4_ht25a"]
 
 [sub_resource type="Theme" id="Theme_qyarw"]
 default_font = ExtResource("1_ykyrh")
 default_font_size = 70
+
+[sub_resource type="Theme" id="Theme_10ssr"]
+default_font = ExtResource("3_vj2fm")
+default_font_size = 30
+
+[sub_resource type="Theme" id="Theme_jrqtx"]
+default_font = ExtResource("4_ht25a")
+default_font_size = 40
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -17,13 +27,48 @@ grow_vertical = 2
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 470.0
+offset_left = 450.0
 offset_top = 527.0
-offset_right = 602.0
+offset_right = 582.0
 offset_bottom = 613.0
 scale = Vector2(1.91108, 1.12681)
 theme = SubResource("Theme_qyarw")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "Start"
 script = ExtResource("2_bua3y")
+
+[node name="Story" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 374.0
+offset_top = 37.0
+offset_right = 753.0
+offset_bottom = 208.0
+theme = SubResource("Theme_10ssr")
+theme_override_colors/default_color = Color(0.713726, 0.521569, 0.027451, 1)
+theme_override_constants/shadow_outline_size = 10
+bbcode_enabled = true
+text = "[center]Oh no! Kris forgot to tune his guitar..... It wouldn't hurt if I.... you know... tried, right? Yeah. Yeah I'm sure that will be fine. I tuned a guitar before! Three years ago....."
+
+[node name="rules" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 309.0
+offset_right = 861.0
+offset_bottom = 480.0
+theme = SubResource("Theme_10ssr")
+theme_override_colors/default_color = Color(0.713726, 0.521569, 0.027451, 1)
+theme_override_constants/shadow_outline_size = 10
+bbcode_enabled = true
+text = "[center] Align the red circle with the white square to tune the guitar.  You need to tune six strings, each one increasing in difficulty. If the timer runs out before all strings are tuned, Kris's guitar won't be tuned! So make sure you give it your all! Your reputation is on the line..."
+
+[node name="How to play" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 246.0
+offset_right = 694.0
+offset_bottom = 321.0
+theme = SubResource("Theme_jrqtx")
+bbcode_enabled = true
+text = "[center] How to play"
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
