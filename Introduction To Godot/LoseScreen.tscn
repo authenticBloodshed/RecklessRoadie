@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://bvlpklmojmwi8"]
+[gd_scene load_steps=10 format=3 uid="uid://bvlpklmojmwi8"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_cyhbn"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="2_e6cbo"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_mx1oe"]
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="4_1ogb1"]
 [ext_resource type="Script" path="res://StartButton.gd" id="5_1syme"]
-[ext_resource type="Script" path="res://QuitButton.gd" id="6_hol7p"]
 
 [sub_resource type="Theme" id="Theme_oaaij"]
 default_font = ExtResource("2_e6cbo")
@@ -40,7 +39,7 @@ position = Vector2(284.5, 125.5)
 scale = Vector2(1.04833, 0.807)
 texture = ExtResource("2_mx1oe")
 
-[node name="YouLose" type="RichTextLabel" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -55,7 +54,7 @@ theme_override_constants/outline_size = 9
 bbcode_enabled = true
 text = "[center]You lose!"
 
-[node name="PlayAgain?" type="RichTextLabel" parent="."]
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 373.0
 offset_top = 167.0
@@ -74,10 +73,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -104.0
-offset_top = -191.0
-offset_right = 130.0
-offset_bottom = -105.0
+offset_left = -66.0
+offset_top = -86.0
+offset_right = 66.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.897156, 0.601268)
@@ -88,26 +86,4 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_2hk02")
 text = "Play again!"
 script = ExtResource("5_1syme")
 
-[node name="QuitButton" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -104.0
-offset_top = -116.0
-offset_right = 130.0
-offset_bottom = -30.0
-grow_horizontal = 2
-grow_vertical = 0
-scale = Vector2(0.897156, 0.601268)
-theme = SubResource("Theme_y3sna")
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 5
-theme_override_styles/normal = SubResource("StyleBoxEmpty_2hk02")
-text = "Quit game!"
-script = ExtResource("6_hol7p")
-
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
-[connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]

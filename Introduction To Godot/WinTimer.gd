@@ -1,6 +1,7 @@
 extends Timer
 class_name WinTimer
 
+
 func _ready():
 	start()
 	paused = true

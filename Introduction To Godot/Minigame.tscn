@@ -73,7 +73,7 @@ shape = SubResource("RectangleShape2D_m5cec")
 [node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
 position = Vector2(167, 222)
 script = ExtResource("2_l1et3")
-winTimer = NodePath("Timer")
+winTimer = NodePath("")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(1, 101)
