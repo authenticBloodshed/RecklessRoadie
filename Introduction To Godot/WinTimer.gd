@@ -5,6 +5,10 @@ class_name WinTimer
 @export var bar:Sprite2D
 @export var target:Sprite2D
 @export var timer:Label
+@export var player2:CharacterBody2D
+@export var bar2:Sprite2D
+@export var target2:Sprite2D
+@export var timer2:Label
 
 func _ready():
 	start()
@@ -29,4 +33,13 @@ func _on_timeout():
 	target.process_mode = Node.PROCESS_MODE_DISABLED
 	target.visible = false
 	timer.process_mode = Node.PROCESS_MODE_DISABLED
+	timer.visible = false
+	player2.process_mode = Node.PROCESS_MODE_INHERIT
+	player2.visible = true
+	bar2.process_mode = Node.PROCESS_MODE_INHERIT
+	bar2.visible = true
+	target2.process_mode = Node.PROCESS_MODE_INHERIT
+	target2.visible = true
+	timer2.process_mode = Node.PROCESS_MODE_INHERIT
+	timer2.visible = true
 
