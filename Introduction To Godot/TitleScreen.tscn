@@ -47,12 +47,12 @@ scale = Vector2(105.25, 45.3434)
 theme = SubResource("Theme_yvf81")
 theme_override_styles/panel = SubResource("StyleBoxFlat_sdoly")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(573.5, 322.5)
 scale = Vector2(0.385667, 0.218333)
 texture = ExtResource("1_ul4ql")
 
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="Dots" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.454902)
 position = Vector2(719, 610.5)
 scale = Vector2(0.863333, 0.794333)

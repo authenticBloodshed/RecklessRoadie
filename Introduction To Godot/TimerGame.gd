@@ -19,6 +19,7 @@ func _on_timeout():
 	
 	if seconds <= 0 and minutes <= 0:
 		$Label.text = "00:00"
+		get_tree().change_scene_to_file("res://LoseScreen.tscn")
 
 func Reset_Timer():
 	seconds = Dseconds

@@ -1,0 +1,89 @@
+[gd_scene load_steps=10 format=3 uid="uid://bvlpklmojmwi8"]
+
+[ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_cyhbn"]
+[ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="2_e6cbo"]
+[ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_mx1oe"]
+[ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="4_1ogb1"]
+[ext_resource type="Script" path="res://StartButton.gd" id="5_1syme"]
+
+[sub_resource type="Theme" id="Theme_oaaij"]
+default_font = ExtResource("2_e6cbo")
+default_font_size = 150
+
+[sub_resource type="Theme" id="Theme_bxnyb"]
+default_font = ExtResource("2_e6cbo")
+default_font_size = 60
+
+[sub_resource type="Theme" id="Theme_y3sna"]
+default_font = ExtResource("4_1ogb1")
+default_font_size = 69
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2hk02"]
+
+[node name="LoseScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.5, 323.5)
+scale = Vector2(0.385, 0.217)
+texture = ExtResource("1_cyhbn")
+
+[node name="Dots" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.454902)
+position = Vector2(284.5, 125.5)
+scale = Vector2(1.04833, 0.807)
+texture = ExtResource("2_mx1oe")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -254.5
+offset_right = 254.5
+offset_bottom = 202.0
+grow_horizontal = 2
+theme = SubResource("Theme_oaaij")
+theme_override_colors/font_outline_color = Color(0.662745, 0.364706, 0.686275, 1)
+theme_override_constants/outline_size = 9
+bbcode_enabled = true
+text = "[center]You lose!"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 167.0
+offset_right = 766.0
+offset_bottom = 248.0
+theme = SubResource("Theme_bxnyb")
+theme_override_colors/font_outline_color = Color(0.619608, 0.32549, 0.686275, 1)
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[center] Play again?"
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -86.0
+offset_right = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.897156, 0.601268)
+theme = SubResource("Theme_y3sna")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2hk02")
+text = "Play again!"
+script = ExtResource("5_1syme")
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
