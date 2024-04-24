@@ -86,10 +86,14 @@ texture = ExtResource("2_o50nc")
 position = Vector2(1, 101)
 shape = SubResource("CircleShape2D_tedlw")
 
-[node name="Timer" type="Timer" parent="Player"]
+[node name="Timer" type="Timer" parent="Player" node_paths=PackedStringArray("player", "bar", "target", "timer")]
 wait_time = 15.0
 one_shot = true
 script = ExtResource("7_5jj6a")
+player = NodePath("..")
+bar = NodePath("../../Bar")
+target = NodePath("../../Target")
+timer = NodePath("Label")
 
 [node name="Label" type="Label" parent="Player/Timer"]
 offset_left = 79.0
