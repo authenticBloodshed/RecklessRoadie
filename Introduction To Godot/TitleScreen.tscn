@@ -1,7 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://dver56n4kwo3v"]
+[gd_scene load_steps=15 format=3 uid="uid://dver56n4kwo3v"]
 
+[ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_ul4ql"]
+[ext_resource type="Texture2D" uid="uid://kktgq6p072y3" path="res://tutorialtextbox.png" id="1_x6qwb"]
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="1_ykyrh"]
 [ext_resource type="Script" path="res://StartButton.gd" id="2_bua3y"]
+[ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_w8tj2"]
+[ext_resource type="Texture2D" uid="uid://8crpoilp6v5q" path="res://tutorialsquare.png" id="3_nn8mg"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_vj2fm"]
 [ext_resource type="FontFile" uid="uid://lyh0tftt7x8e" path="res://Fontspring-DEMO-prettyboy-semibold.otf" id="4_ht25a"]
 
@@ -18,7 +22,7 @@ default_font_size = 69
 
 [sub_resource type="Theme" id="Theme_10ssr"]
 default_font = ExtResource("3_vj2fm")
-default_font_size = 30
+default_font_size = 26
 
 [sub_resource type="Theme" id="Theme_jrqtx"]
 default_font = ExtResource("4_ht25a")
@@ -35,13 +39,34 @@ grow_vertical = 2
 [node name="Panel" type="Panel" parent="."]
 self_modulate = Color(0.180392, 0.192157, 0.32549, 1)
 layout_mode = 0
-offset_left = -824.0
-offset_top = -252.0
-offset_right = -784.0
-offset_bottom = -212.0
+offset_left = -790.0
+offset_top = -220.0
+offset_right = -750.0
+offset_bottom = -180.0
 scale = Vector2(105.25, 45.3434)
 theme = SubResource("Theme_yvf81")
 theme_override_styles/panel = SubResource("StyleBoxFlat_sdoly")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(573.5, 322.5)
+scale = Vector2(0.385667, 0.218333)
+texture = ExtResource("1_ul4ql")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.454902)
+position = Vector2(719, 610.5)
+scale = Vector2(0.863333, 0.794333)
+texture = ExtResource("2_w8tj2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.5, 145.625)
+scale = Vector2(0.232333, 0.11175)
+texture = ExtResource("1_x6qwb")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(577, 433)
+scale = Vector2(0.221042, 0.135333)
+texture = ExtResource("3_nn8mg")
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 1
@@ -68,14 +93,13 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -189.5
-offset_top = 45.0
-offset_right = 189.5
-offset_bottom = 216.0
+offset_left = -161.0
+offset_top = 57.0
+offset_right = 160.0
+offset_bottom = 220.0
 grow_horizontal = 2
 theme = SubResource("Theme_10ssr")
-theme_override_colors/default_color = Color(0.92549, 0.682353, 0.0705882, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.321569)
+theme_override_colors/default_color = Color(0.619608, 0.32549, 0.686275, 1)
 theme_override_constants/shadow_outline_size = 10
 bbcode_enabled = true
 text = "[center]Oh no! Kris forgot to tune his guitar..... It wouldn't hurt if I.... you know... tried, right? Yeah. Yeah I'm sure that will be fine. I tuned a guitar before! Three years ago....."
@@ -88,28 +112,34 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -275.0
-offset_top = -341.0
+offset_top = -300.0
 offset_right = 275.0
-offset_bottom = -134.0
+offset_bottom = -93.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_10ssr")
-theme_override_colors/default_color = Color(0.92549, 0.682353, 0.0705882, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.321569)
+theme_override_colors/default_color = Color(0.823529, 0.603922, 0.0392157, 1)
 theme_override_constants/shadow_outline_size = 10
 bbcode_enabled = true
 text = "[center] Align the red circle with the white square to tune the guitar.  You need to tune six strings, each one increasing in difficulty. If the timer runs out before all strings are tuned, Kris's guitar won't be tuned! So make sure you give it your all! Your reputation is on the line..."
 
 [node name="How to play" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 436.0
-offset_top = 246.0
-offset_right = 694.0
-offset_bottom = 321.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = -45.0
+offset_right = 129.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
 theme = SubResource("Theme_jrqtx")
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.619608, 0.32549, 0.686275, 1)
 theme_override_constants/shadow_outline_size = 3
-theme_override_constants/outline_size = 7
+theme_override_constants/outline_size = 11
 bbcode_enabled = true
 text = "[center] How to play"
 
