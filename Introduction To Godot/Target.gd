@@ -13,8 +13,10 @@ func _process(delta):
 	# Applies motion
 	position += random * delta
 	
+	#Makes the target bounce against the borders
 	if position.y > 569 or position.y < 65:
 		random *= -1
 		
+		#If random is close to 0, makes the speed 10
 	if abs(random.y) < 0.01:
 		random = Vector2(0,10)

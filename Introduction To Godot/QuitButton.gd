@@ -1,6 +1,6 @@
 extends Button
 
 
-# Called when the node enters the scene tree for the first time.
+# Quits game when button is pressed
 func _on_pressed():
 	get_tree().quit()
