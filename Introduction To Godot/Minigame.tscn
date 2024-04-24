@@ -55,7 +55,7 @@ shape = SubResource("RectangleShape2D_skqbh")
 position = Vector2(2.80933, 440.227)
 shape = SubResource("RectangleShape2D_skqbh")
 
-[node name="Target" type="Sprite2D" parent="."]
+[node name="Target" type="Sprite2D" parent="." groups=["tagret"]]
 position = Vector2(169, 324)
 scale = Vector2(0.422343, 0.189364)
 texture = ExtResource("4_baiss")
@@ -73,7 +73,7 @@ shape = SubResource("RectangleShape2D_m5cec")
 [node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
 position = Vector2(167, 222)
 script = ExtResource("2_l1et3")
-winTimer = NodePath("")
+winTimer = NodePath("Timer")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(1, 101)
