@@ -86,7 +86,7 @@ texture = ExtResource("2_o50nc")
 position = Vector2(1, 101)
 shape = SubResource("CircleShape2D_tedlw")
 
-[node name="Timer" type="Timer" parent="Player" node_paths=PackedStringArray("player", "bar", "target", "timer", "player2", "bar2", "target2", "timer2")]
+[node name="Timer" type="Timer" parent="Player" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision", "player2", "bar2", "target2", "timer2", "collision2")]
 wait_time = 15.0
 one_shot = true
 script = ExtResource("7_5jj6a")
@@ -94,10 +94,12 @@ player = NodePath("..")
 bar = NodePath("../../Bar")
 target = NodePath("../../Target")
 timer = NodePath("Label")
+collision = NodePath("../Area2D")
 player2 = NodePath("../../Player2")
 bar2 = NodePath("../../Bar2")
 target2 = NodePath("../../Target2")
 timer2 = NodePath("../../Player2/Timer/Label")
+collision2 = NodePath("../../Player2/Area2D")
 
 [node name="Label" type="Label" parent="Player/Timer"]
 offset_left = 79.0
@@ -162,7 +164,86 @@ texture = ExtResource("2_o50nc")
 position = Vector2(1, 101)
 shape = SubResource("CircleShape2D_tedlw")
 
-[node name="Timer" type="Timer" parent="Player2" node_paths=PackedStringArray("player", "bar", "target", "timer")]
+[node name="Timer" type="Timer" parent="Player2" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision", "player2", "bar2", "target2", "timer2", "collision2")]
+wait_time = 15.0
+one_shot = true
+script = ExtResource("7_5jj6a")
+player = NodePath("..")
+bar = NodePath("../../Bar2")
+target = NodePath("../../Target2")
+timer = NodePath("Label")
+collision = NodePath("../Area2D")
+player2 = NodePath("../../Player3")
+bar2 = NodePath("../../Bar3")
+target2 = NodePath("../../Target3")
+timer2 = NodePath("../../Player3/Timer/Label")
+collision2 = NodePath("../../Player3/Area2D")
+
+[node name="Label" type="Label" parent="Player2/Timer"]
+visible = false
+offset_left = 230.0
+offset_top = 39.0
+offset_right = 270.0
+offset_bottom = 62.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Bar3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(444, 327)
+scale = Vector2(0.355957, 0.624677)
+texture = ExtResource("8_jl3x0")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Bar3"]
+position = Vector2(2.80933, 4.80243)
+scale = Vector2(0.89897, 5.37878)
+occluder = SubResource("OccluderPolygon2D_elyw1")
+
+[node name="Top" type="Area2D" parent="Bar3" groups=["boundary"]]
+
+[node name="TopCollision" type="CollisionShape2D" parent="Bar3/Top"]
+position = Vector2(2.80933, -440.228)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Bottom" type="Area2D" parent="Bar3" groups=["boundary"]]
+
+[node name="BottomCollision" type="CollisionShape2D" parent="Bar3/Bottom"]
+position = Vector2(2.80933, 440.227)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Target3" type="Sprite2D" parent="." groups=["tagret"]]
+visible = false
+position = Vector2(445, 324)
+scale = Vector2(0.422343, 0.189364)
+texture = ExtResource("4_baiss")
+script = ExtResource("5_l3ho7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Target3" groups=["tagret"]]
+
+[node name="Area2D" type="Area2D" parent="Target3" groups=["tagret"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target3/Area2D"]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1.00423, 1.02802)
+shape = SubResource("RectangleShape2D_m5cec")
+
+[node name="Player3" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
+visible = false
+position = Vector2(441, 222)
+script = ExtResource("2_l1et3")
+winTimer = NodePath("../Player2/Timer")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player3"]
+position = Vector2(1, 101)
+scale = Vector2(0.024625, 0.025125)
+texture = ExtResource("2_o50nc")
+
+[node name="Area2D" type="Area2D" parent="Player3" groups=["player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player3/Area2D"]
+position = Vector2(1, 101)
+shape = SubResource("CircleShape2D_tedlw")
+
+[node name="Timer" type="Timer" parent="Player3" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision")]
 wait_time = 15.0
 one_shot = true
 script = ExtResource("7_5jj6a")
@@ -170,11 +251,13 @@ player = NodePath("../../Player")
 bar = NodePath("../../Bar")
 target = NodePath("../../Target")
 timer = NodePath("../../Player/Timer/Label")
+collision = NodePath("../../Player2/Area2D/CollisionShape2D")
 
-[node name="Label" type="Label" parent="Player2/Timer"]
-offset_left = 230.0
+[node name="Label" type="Label" parent="Player3/Timer"]
+visible = false
+offset_left = 350.0
 offset_top = 39.0
-offset_right = 270.0
+offset_right = 390.0
 offset_bottom = 62.0
 metadata/_edit_use_anchors_ = true
 
@@ -206,4 +289,7 @@ scale = Vector2(5.44, 3.24)
 [connection signal="area_entered" from="Player2/Area2D" to="Player2" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Player2/Area2D" to="Player2" method="_on_area_2d_area_exited"]
 [connection signal="timeout" from="Player2/Timer" to="Player2/Timer" method="_on_timeout"]
+[connection signal="area_entered" from="Player3/Area2D" to="Player3" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Player3/Area2D" to="Player3" method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="Player3/Timer" to="Player3/Timer" method="_on_timeout"]
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
