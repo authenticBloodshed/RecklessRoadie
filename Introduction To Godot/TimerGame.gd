@@ -3,7 +3,7 @@ extends Timer
 var seconds = 0
 var minutes = 0
 var Dseconds = 30
-var Dminutes = 1
+var Dminutes = 2
 
 func _ready():
 	Reset_Timer()
