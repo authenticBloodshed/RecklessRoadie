@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=16 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bc0kpcm4syh5g" path="res://luz_png__1__by_martismiler_d5u57b9-fullview.png" id="7_k8dnp"]
 [ext_resource type="Texture2D" uid="uid://b1i2o8gnpc3ts" path="res://bar.png" id="8_jl3x0"]
 [ext_resource type="Script" path="res://TimerGame.gd" id="8_m6r7t"]
+[ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="10_y1r4w"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_elyw1"]
 polygon = PackedVector2Array(-150.002, -84.2262, -150.002, -74.1071, -150.002, -57.4405, -150.002, -34.2262, -150.002, -4.16667, -150.002, 17.8571, -150.002, 39.5833, -150.002, 72.619, -150.002, 83.9286, 146.877, 83.9286, 150.002, 83.9286, 150.002, 78.5714, 150.002, 70.5357, 150.002, 63.9881, 150.002, 55.3571, 150.002, 46.7262, 150.002, 37.5, 150.002, 31.5476, 150.002, 22.0238, 150.002, 13.3929, 150.002, 4.7619, 150.002, -3.57143, 150.002, -17.2619, 150.002, -27.6786, 150.002, -37.7976, 150.002, -48.2143, 150.002, -56.25, 150.002, -66.6667, 150.002, -76.4881, 150.002, -83.9286, -3.12506, -83.9286, -121.877, -83.9286)
@@ -21,6 +22,10 @@ size = Vector2(198.89, 200.671)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tedlw"]
 radius = 24.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_4xtig"]
+font = ExtResource("10_y1r4w")
+font_size = 20
 
 [node name="MinigameScene" type="Node2D"]
 
@@ -334,21 +339,194 @@ process_mode = 4
 position = Vector2(1, 101)
 shape = SubResource("CircleShape2D_tedlw")
 
-[node name="Timer" type="Timer" parent="Player4" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision")]
+[node name="Timer" type="Timer" parent="Player4" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision", "area2D", "player2", "bar2", "target2", "timer2", "collision2", "area2D2")]
 wait_time = 15.0
 one_shot = true
 script = ExtResource("7_5jj6a")
-player = NodePath("../../Player")
-bar = NodePath("../../Bar")
-target = NodePath("../../Target")
-timer = NodePath("../../Player/Timer/Label")
-collision = NodePath("../../Player2/Area2D/CollisionShape2D")
+player = NodePath("..")
+bar = NodePath("../../Bar4")
+target = NodePath("../../Target4")
+timer = NodePath("Label")
+collision = NodePath("../Area2D/CollisionShape2D")
+area2D = NodePath("../Area2D")
+player2 = NodePath("../../Player5")
+bar2 = NodePath("../../Bar5")
+target2 = NodePath("../../Target5")
+timer2 = NodePath("../../Player5/Timer/Label")
+collision2 = NodePath("../../Player5/Area2D/CollisionShape2D")
+area2D2 = NodePath("../../Player5/Area2D")
 
 [node name="Label" type="Label" parent="Player4/Timer"]
 visible = false
 offset_left = 488.0
 offset_top = 39.0
 offset_right = 528.0
+offset_bottom = 62.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Bar5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(726, 327)
+scale = Vector2(0.355957, 0.624677)
+texture = ExtResource("8_jl3x0")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Bar5"]
+position = Vector2(2.80933, 4.80243)
+scale = Vector2(0.89897, 5.37878)
+occluder = SubResource("OccluderPolygon2D_elyw1")
+
+[node name="Top" type="Area2D" parent="Bar5" groups=["boundary"]]
+
+[node name="TopCollision" type="CollisionShape2D" parent="Bar5/Top"]
+position = Vector2(2.80933, -440.228)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Bottom" type="Area2D" parent="Bar5" groups=["boundary"]]
+
+[node name="BottomCollision" type="CollisionShape2D" parent="Bar5/Bottom"]
+position = Vector2(2.80933, 440.227)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Target5" type="Sprite2D" parent="." groups=["tagret"]]
+visible = false
+position = Vector2(727, 324)
+scale = Vector2(0.422343, 0.189364)
+texture = ExtResource("4_baiss")
+script = ExtResource("5_l3ho7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Target5" groups=["tagret"]]
+
+[node name="Area2D" type="Area2D" parent="Target5" groups=["tagret"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target5/Area2D"]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1.00423, 1.02802)
+shape = SubResource("RectangleShape2D_m5cec")
+
+[node name="Player5" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
+visible = false
+position = Vector2(725, 222)
+script = ExtResource("2_l1et3")
+winTimer = NodePath("Timer")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player5"]
+position = Vector2(1, 101)
+scale = Vector2(0.024625, 0.025125)
+texture = ExtResource("2_o50nc")
+
+[node name="Area2D" type="Area2D" parent="Player5" groups=["player"]]
+process_mode = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player5/Area2D"]
+process_mode = 4
+position = Vector2(1, 101)
+shape = SubResource("CircleShape2D_tedlw")
+
+[node name="Timer" type="Timer" parent="Player5" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision", "area2D", "player2", "bar2", "target2", "timer2", "collision2", "area2D2")]
+wait_time = 15.0
+one_shot = true
+script = ExtResource("7_5jj6a")
+player = NodePath("..")
+bar = NodePath("../../Bar5")
+target = NodePath("../../Target5")
+timer = NodePath("Label")
+collision = NodePath("../Area2D/CollisionShape2D")
+area2D = NodePath("../Area2D")
+player2 = NodePath("../../Player6")
+bar2 = NodePath("../../Bar6")
+target2 = NodePath("../../Target6")
+timer2 = NodePath("../../Player6/Timer/Label")
+collision2 = NodePath("../../Player6/Area2D/CollisionShape2D")
+area2D2 = NodePath("../../Player6/Area2D")
+
+[node name="Label" type="Label" parent="Player5/Timer"]
+visible = false
+offset_left = 627.0
+offset_top = 39.0
+offset_right = 667.0
+offset_bottom = 62.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Bar6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(898, 327)
+scale = Vector2(0.355957, 0.624677)
+texture = ExtResource("8_jl3x0")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Bar6"]
+position = Vector2(2.80933, 4.80243)
+scale = Vector2(0.89897, 5.37878)
+occluder = SubResource("OccluderPolygon2D_elyw1")
+
+[node name="Top" type="Area2D" parent="Bar6" groups=["boundary"]]
+
+[node name="TopCollision" type="CollisionShape2D" parent="Bar6/Top"]
+position = Vector2(2.80933, -440.228)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Bottom" type="Area2D" parent="Bar6" groups=["boundary"]]
+
+[node name="BottomCollision" type="CollisionShape2D" parent="Bar6/Bottom"]
+position = Vector2(2.80933, 440.227)
+shape = SubResource("RectangleShape2D_skqbh")
+
+[node name="Target6" type="Sprite2D" parent="." groups=["tagret"]]
+visible = false
+position = Vector2(898, 324)
+scale = Vector2(0.422343, 0.189364)
+texture = ExtResource("4_baiss")
+script = ExtResource("5_l3ho7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Target6" groups=["tagret"]]
+
+[node name="Area2D" type="Area2D" parent="Target6" groups=["tagret"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target6/Area2D"]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1.00423, 1.02802)
+shape = SubResource("RectangleShape2D_m5cec")
+
+[node name="Player6" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
+visible = false
+position = Vector2(897, 222)
+script = ExtResource("2_l1et3")
+winTimer = NodePath("Timer")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player6"]
+position = Vector2(1, 101)
+scale = Vector2(0.024625, 0.025125)
+texture = ExtResource("2_o50nc")
+
+[node name="Area2D" type="Area2D" parent="Player6" groups=["player"]]
+process_mode = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player6/Area2D"]
+process_mode = 4
+position = Vector2(1, 101)
+shape = SubResource("CircleShape2D_tedlw")
+
+[node name="Timer" type="Timer" parent="Player6" node_paths=PackedStringArray("player", "bar", "target", "timer", "collision", "area2D", "player2", "bar2", "target2", "timer2", "collision2", "area2D2")]
+wait_time = 15.0
+one_shot = true
+script = ExtResource("7_5jj6a")
+player = NodePath("..")
+bar = NodePath("../../Bar6")
+target = NodePath("../../Target6")
+timer = NodePath("Label")
+collision = NodePath("../../Player5/Area2D/CollisionShape2D")
+area2D = NodePath("../Area2D")
+player2 = NodePath("..")
+bar2 = NodePath("../../Bar6")
+target2 = NodePath("../../Target6")
+timer2 = NodePath("Label")
+collision2 = NodePath("../Area2D/CollisionShape2D")
+area2D2 = NodePath("../Area2D")
+
+[node name="Label" type="Label" parent="Player6/Timer"]
+visible = false
+offset_left = 807.0
+offset_top = 39.0
+offset_right = 847.0
 offset_bottom = 62.0
 metadata/_edit_use_anchors_ = true
 
@@ -368,11 +546,12 @@ autostart = true
 script = ExtResource("8_m6r7t")
 
 [node name="Label" type="Label" parent="Timer"]
-offset_left = 925.0
+offset_left = 971.0
 offset_top = 8.0
-offset_right = 965.0
+offset_right = 1011.0
 offset_bottom = 31.0
-scale = Vector2(5.44, 3.24)
+scale = Vector2(4.4, 3.24)
+label_settings = SubResource("LabelSettings_4xtig")
 
 [connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Player/Area2D" to="Player" method="_on_area_2d_area_exited"]
@@ -386,4 +565,10 @@ scale = Vector2(5.44, 3.24)
 [connection signal="area_entered" from="Player4/Area2D" to="Player4" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Player4/Area2D" to="Player4" method="_on_area_2d_area_exited"]
 [connection signal="timeout" from="Player4/Timer" to="Player4/Timer" method="_on_timeout"]
+[connection signal="area_entered" from="Player5/Area2D" to="Player5" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Player5/Area2D" to="Player5" method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="Player5/Timer" to="Player5/Timer" method="_on_timeout"]
+[connection signal="area_entered" from="Player6/Area2D" to="Player6" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Player6/Area2D" to="Player6" method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="Player6/Timer" to="Player6/Timer" method="_on_timeout"]
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

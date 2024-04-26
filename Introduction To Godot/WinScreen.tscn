@@ -1,0 +1,88 @@
+[gd_scene load_steps=10 format=3 uid="uid://qlwqvsiaried"]
+
+[ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_0pnu1"]
+[ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_htpyf"]
+[ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_l0677"]
+[ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="4_nxn1v"]
+[ext_resource type="Script" path="res://StartButton.gd" id="5_7fwvo"]
+
+[sub_resource type="Theme" id="Theme_half5"]
+default_font = ExtResource("3_l0677")
+default_font_size = 150
+
+[sub_resource type="Theme" id="Theme_woqhu"]
+default_font = ExtResource("3_l0677")
+default_font_size = 60
+
+[sub_resource type="Theme" id="Theme_q5010"]
+default_font = ExtResource("4_nxn1v")
+default_font_size = 69
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ya2jq"]
+
+[node name="WinScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(571.5, 323)
+scale = Vector2(0.389667, 0.218667)
+texture = ExtResource("1_0pnu1")
+
+[node name="Dots" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.454902)
+position = Vector2(284.5, 125.5)
+scale = Vector2(1.04833, 0.807)
+texture = ExtResource("2_htpyf")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -254.5
+offset_right = 254.5
+offset_bottom = 202.0
+grow_horizontal = 2
+theme = SubResource("Theme_half5")
+theme_override_colors/font_outline_color = Color(0.662745, 0.364706, 0.686275, 1)
+theme_override_constants/outline_size = 9
+bbcode_enabled = true
+text = "[center]You win!"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 373.0
+offset_top = 167.0
+offset_right = 766.0
+offset_bottom = 248.0
+theme = SubResource("Theme_woqhu")
+theme_override_colors/font_outline_color = Color(0.619608, 0.32549, 0.686275, 1)
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[center] Play again?"
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -86.0
+offset_right = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.897156, 0.601268)
+theme = SubResource("Theme_q5010")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ya2jq")
+text = "Play again!"
+script = ExtResource("5_7fwvo")
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
