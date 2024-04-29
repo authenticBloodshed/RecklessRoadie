@@ -1,7 +1,6 @@
 extends Timer
 class_name WinTimer
 
-var barcount = 1
 @export var player:CharacterBody2D
 @export var bar:Sprite2D
 @export var target:Sprite2D
@@ -51,9 +50,5 @@ func _on_timeout():
 	timer2.visible = true
 	collision2.process_mode = Node.PROCESS_MODE_INHERIT
 	area2D2.process_mode = Node.PROCESS_MODE_INHERIT
-	barcount = barcount + 1
-	print(barcount)
 	
-	if barcount == 6:
-		get_tree().change_scene_to_file("res://WinScreen.tscn")
 

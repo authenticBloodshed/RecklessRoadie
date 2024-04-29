@@ -7,6 +7,7 @@ const JUMP_FORCE = 50
 
 var motion = Vector2()
 @export var winTimer: WinTimer
+@export var winTimerSix : WinTimerSix
 
 func _physics_process(delta):
 	# Applies gravity
