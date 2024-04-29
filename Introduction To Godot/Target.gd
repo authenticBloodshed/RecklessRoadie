@@ -5,13 +5,19 @@ var motion = Vector2(0, -1)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	self_modulate.a8 = 0
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	# Applies motion
 	position += random * delta
+	
+		# Allows the player to jump
+	if Input.is_action_pressed("Tune"):
+		self_modulate.a8 = 255
+		await get_tree(). create_timer(3). timeout
+		self_modulate.a8 = 0
 	
 	#Makes the target bounce against the borders
 	if position.y > 569 or position.y < 65:
