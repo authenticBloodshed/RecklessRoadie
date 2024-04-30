@@ -8,6 +8,7 @@ const JUMP_FORCE = 50
 var motion = Vector2()
 @export var winTimer: WinTimer
 @export var winTimerSix : WinTimerSix
+@export var playerSix:bool
 
 func _physics_process(delta):
 	# Applies gravity
@@ -26,11 +27,19 @@ func _physics_process(delta):
 func _on_area_2d_area_entered(area):
 	print("collided")
 	if area.is_in_group("tagret"):
-		winTimer.startTimer()
+		
+		if playerSix :
+			winTimerSix.startTimer()
+		else: 
+			winTimer.startTimer()
 	
 	if area.is_in_group("boundary"):
 		motion.y *= -1
-	
+		
 
 func _on_area_2d_area_exited(area):
-	winTimer.pauseTimer()
+	if playerSix :
+		winTimerSix.pauseTimer()
+	else: 
+		winTimer.pauseTimer()
+

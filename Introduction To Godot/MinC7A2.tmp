@@ -32,11 +32,6 @@ font_size = 20
 
 [node name="MinigameScene" type="Node2D"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_ho4a2")
-volume_db = 3.0
-script = ExtResource("13_ff4px")
-
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(584.5, 322.5)
 scale = Vector2(0.601563, 0.606482)
@@ -332,6 +327,10 @@ position = Vector2(3.05176e-05, 0)
 scale = Vector2(1.00423, 1.02802)
 shape = SubResource("RectangleShape2D_m5cec")
 
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="Target4/Area2D"]
+stream = ExtResource("5_ho4a2")
+volume_db = 5.547
+
 [node name="Player4" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
 visible = false
 position = Vector2(581, 222)
@@ -414,6 +413,10 @@ script = ExtResource("5_l3ho7")
 position = Vector2(3.05176e-05, 0)
 scale = Vector2(1.00423, 1.02802)
 shape = SubResource("RectangleShape2D_m5cec")
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Target5/Area2D"]
+stream = ExtResource("5_ho4a2")
+volume_db = 5.547
 
 [node name="Player5" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
 visible = false
@@ -498,13 +501,16 @@ position = Vector2(3.05176e-05, 0)
 scale = Vector2(1.00423, 1.02802)
 shape = SubResource("RectangleShape2D_m5cec")
 
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="Target6/Area2D"]
+stream = ExtResource("5_ho4a2")
+volume_db = 5.547
+
 [node name="Player6" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer", "winTimerSix")]
 visible = false
 position = Vector2(897, 222)
 script = ExtResource("2_l1et3")
 winTimer = NodePath("Timer")
 winTimerSix = NodePath("Timer")
-playerSix = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Player6"]
 position = Vector2(1, 101)
@@ -533,7 +539,7 @@ player2 = NodePath("..")
 bar2 = NodePath("../../Bar6")
 target2 = NodePath("../../Target6")
 timer2 = NodePath("Label")
-collision2 = NodePath("../../Target6/Area2D/CollisionShape2D")
+collision2 = NodePath("../Area2D/CollisionShape2D")
 area2D2 = NodePath("../Area2D")
 
 [node name="Label" type="Label" parent="Player6/Timer"]
@@ -566,6 +572,11 @@ offset_right = 1011.0
 offset_bottom = 31.0
 scale = Vector2(4.4, 3.24)
 label_settings = SubResource("LabelSettings_4xtig")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ho4a2")
+volume_db = 3.0
+script = ExtResource("13_ff4px")
 
 [connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Player/Area2D" to="Player" method="_on_area_2d_area_exited"]
