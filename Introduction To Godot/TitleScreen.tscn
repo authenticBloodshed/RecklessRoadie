@@ -3,11 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_ul4ql"]
 [ext_resource type="Texture2D" uid="uid://kktgq6p072y3" path="res://tutorialtextbox.png" id="1_x6qwb"]
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="1_ykyrh"]
-[ext_resource type="Script" path="res://StartButton.gd" id="2_bua3y"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_w8tj2"]
 [ext_resource type="Texture2D" uid="uid://8crpoilp6v5q" path="res://tutorialsquare.png" id="3_nn8mg"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_vj2fm"]
 [ext_resource type="FontFile" uid="uid://lyh0tftt7x8e" path="res://Fontspring-DEMO-prettyboy-semibold.otf" id="4_ht25a"]
+[ext_resource type="Script" path="res://ControlsButton.gd" id="6_vcgcj"]
 
 [sub_resource type="Theme" id="Theme_yvf81"]
 
@@ -86,7 +86,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_styles/normal = SubResource("StyleBoxEmpty_3xi5o")
 text = "Start"
-script = ExtResource("2_bua3y")
+script = ExtResource("6_vcgcj")
 
 [node name="Story" type="RichTextLabel" parent="."]
 layout_mode = 1

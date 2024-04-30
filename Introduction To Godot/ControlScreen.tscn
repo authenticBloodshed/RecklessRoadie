@@ -1,0 +1,106 @@
+[gd_scene load_steps=11 format=3 uid="uid://bafc0xepe2nv3"]
+
+[ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_oa0x7"]
+[ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_080vd"]
+[ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_uscet"]
+[ext_resource type="Texture2D" uid="uid://8crpoilp6v5q" path="res://tutorialsquare.png" id="4_68xib"]
+[ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="5_eqa4o"]
+[ext_resource type="Script" path="res://StartButton.gd" id="6_h3qiw"]
+
+[sub_resource type="Theme" id="Theme_hnti4"]
+default_font = ExtResource("3_uscet")
+default_font_size = 72
+
+[sub_resource type="Theme" id="Theme_2ygrh"]
+default_font = ExtResource("5_eqa4o")
+default_font_size = 69
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6mxf0"]
+
+[sub_resource type="Theme" id="Theme_6p3lt"]
+default_font = ExtResource("3_uscet")
+default_font_size = 26
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(571.5, 323)
+scale = Vector2(0.389667, 0.218667)
+texture = ExtResource("1_oa0x7")
+
+[node name="Dots" type="Sprite2D" parent="Sprite2D"]
+modulate = Color(1, 1, 1, 0.454902)
+position = Vector2(-441.332, -1455.25)
+scale = Vector2(1.69808, 2.91397)
+texture = ExtResource("2_080vd")
+
+[node name="Controls" type="RichTextLabel" parent="."]
+offset_left = 373.0
+offset_top = 167.0
+offset_right = 766.0
+offset_bottom = 248.0
+theme = SubResource("Theme_hnti4")
+theme_override_colors/font_outline_color = Color(0.619608, 0.32549, 0.686275, 1)
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[center] Controls!"
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(577, 365)
+scale = Vector2(0.221042, 0.135333)
+texture = ExtResource("4_68xib")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -117.0
+offset_top = -116.0
+offset_right = 117.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.897156, 0.601268)
+theme = SubResource("Theme_2ygrh")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6mxf0")
+text = "Start game!"
+script = ExtResource("6_h3qiw")
+
+[node name="Rules" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -291.0
+offset_top = -378.0
+offset_right = 293.0
+offset_bottom = -149.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_6p3lt")
+theme_override_colors/default_color = Color(0.823529, 0.603922, 0.0392157, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/normal_font_size = 31
+bbcode_enabled = true
+text = "[center] Left mouse button:
+Jump!
+
+Spacebar:
+Use tuner!
+
+"
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
