@@ -121,7 +121,7 @@ theme = SubResource("Theme_10ssr")
 theme_override_colors/default_color = Color(0.823529, 0.603922, 0.0392157, 1)
 theme_override_constants/shadow_outline_size = 10
 bbcode_enabled = true
-text = "[center] Align the red circle with the white square to tune the guitar.  You need to tune six strings, each one increasing in difficulty. If the timer runs out before all strings are tuned, Kris's guitar won't be tuned! So make sure you give it your all! Your reputation is on the line..."
+text = "[center] Align the red circle with the white square to tune the guitar.  You need to tune six strings. Make sure you use your tuner to get the tone right! If the timer runs out before all strings are tuned, Kris's guitar won't be tuned! So make sure you give it your all! Your reputation is on the line..."
 
 [node name="How to play" type="RichTextLabel" parent="."]
 layout_mode = 1
