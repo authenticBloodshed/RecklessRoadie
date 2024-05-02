@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkpy2nfbrggfq"
+path="res://.godot/imported/Plastika remix 152bpm mp3.mp3-f8e2f8f9c161a79e59b05eda7a13aedb.mp3str"
+
+[deps]
+
+source_file="res://Plastika remix 152bpm mp3.mp3"
+dest_files=["res://.godot/imported/Plastika remix 152bpm mp3.mp3-f8e2f8f9c161a79e59b05eda7a13aedb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

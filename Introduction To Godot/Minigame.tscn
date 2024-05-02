@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=20 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="Script" path="res://Player.gd" id="2_l1et3"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" path="res://TimerBar6.gd" id="8_n0l3y"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="10_y1r4w"]
 [ext_resource type="Script" path="res://PlaySound.gd" id="13_ff4px"]
+[ext_resource type="AudioStream" uid="uid://bkpy2nfbrggfq" path="res://Plastika remix 152bpm mp3.mp3" id="14_h56av"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_elyw1"]
 polygon = PackedVector2Array(-150.002, -84.2262, -150.002, -74.1071, -150.002, -57.4405, -150.002, -34.2262, -150.002, -4.16667, -150.002, 17.8571, -150.002, 39.5833, -150.002, 72.619, -150.002, 83.9286, 146.877, 83.9286, 150.002, 83.9286, 150.002, 78.5714, 150.002, 70.5357, 150.002, 63.9881, 150.002, 55.3571, 150.002, 46.7262, 150.002, 37.5, 150.002, 31.5476, 150.002, 22.0238, 150.002, 13.3929, 150.002, 4.7619, 150.002, -3.57143, 150.002, -17.2619, 150.002, -27.6786, 150.002, -37.7976, 150.002, -48.2143, 150.002, -56.25, 150.002, -66.6667, 150.002, -76.4881, 150.002, -83.9286, -3.12506, -83.9286, -121.877, -83.9286)
@@ -192,7 +193,7 @@ player = NodePath("..")
 bar = NodePath("../../Bar2")
 target = NodePath("../../Target2")
 timer = NodePath("Label")
-collision = NodePath("../Area2D/CollisionShape2D")
+collision = NodePath("../../Player/Area2D/CollisionShape2D")
 area2D = NodePath("../Area2D")
 player2 = NodePath("../../Player3")
 bar2 = NodePath("../../Bar3")
@@ -578,6 +579,11 @@ offset_right = 1011.0
 offset_bottom = 31.0
 scale = Vector2(4.4, 3.24)
 label_settings = SubResource("LabelSettings_4xtig")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_h56av")
+volume_db = 2.0
+autoplay = true
 
 [connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Player/Area2D" to="Player" method="_on_area_2d_area_exited"]

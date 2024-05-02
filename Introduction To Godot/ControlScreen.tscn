@@ -41,6 +41,7 @@ scale = Vector2(1.69808, 2.91397)
 texture = ExtResource("2_080vd")
 
 [node name="Controls" type="RichTextLabel" parent="."]
+layout_mode = 0
 offset_left = 373.0
 offset_top = 167.0
 offset_right = 766.0
