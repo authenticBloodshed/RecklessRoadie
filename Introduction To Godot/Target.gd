@@ -29,7 +29,7 @@ func _process(delta):
 		self_modulate.a8 = 200
 		await get_tree().create_timer(0,1).timeout
 		self_modulate.a8 = 255
-		await get_tree().create_timer(3).timeout
+		await get_tree().create_timer(5).timeout
 		self_modulate.a8 = 200
 		await get_tree().create_timer(0,1).timeout
 		self_modulate.a8 = 150
