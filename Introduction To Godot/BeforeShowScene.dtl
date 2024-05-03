@@ -1,7 +1,9 @@
+[background arg="res://939527894727118848.jpeg" fade="1.0" transition="Simple Fade"]
+[music path="res://Plastika remix 152bpm mp3.mp3" fade="0.5" volume="-5.0"]
 Bojan: "Hey! Over here!"
 join Bojan 1
 Bojan: "You must be the new roadie!"
-Bojan: "You came just in time. We are just about to begin setting stuff up!"
+Bojan: "You came just in time. We are just about to begin setting stuff up."
 ...............
 At 9 am......?
 - "Of course! I make sure to come prepared!"
@@ -10,7 +12,49 @@ At 9 am......?
 - "We start working this early...?"
 	"We start working this early...?"
 	Bojan: "You think we asked you to show up at 9 am just for the hell of it?"
+	Bojan: *laughs* "You sound just like Kris when you say that..... He also doesn't like early mornings."
 	Bojan: "OF COURSE we start this early. You knoooow, we actually do everything outselves sooooo....."
 	He's bragging isn't he......
 	Bojan: "You and Maks are preeeetty much our only roadies. So we need LOTS of time to set everything up. If we don't start this early, the show can't go on!"
-	Great....... So it will all depend on me if Maks can't do something. This sure isn't nervewrecking at all. Nuh uh. 
+	Great....... So it will all depend on me if Maks can't do something. This sure isn't nervewrecking at all..........
+Bojan: "Oh. SHIT. I forgot to introduce myself."
+Oh right.... He doesn't know I am a fan.
+Bojan: "I have to say\: your portfolio is super impressive! I can't believe you were a roadie for Michael Jackson!"
+.................
+Bojan: "All this while being ONLY 26 YEARS OLD! Woah you're cool!"
+............... I can't believe he actually read that
+And even less that he believes I actually DID all of those things....
+Bojan: "My name is Bojan! Feel free to just call me by that name, there's no need for being formal."
+"Nice to meet you, Bojan! I am so excited to start working here! Same goes for me.... You can just call me by my name."
+Bojan: "Say.... How about I show you around? I get it's your first day, so I think it'll be good if the first thing we do is show you around. Get a feeling for the band all all that."
+Bojan: "Kris should still be in the bus, so let's go check up on him first."
+[background arg="res://Slide_1.max-784x410.png" fade="0.5"]
+Bojan: "KRISKO! The rookie is here!"
+Kris: "hmmmmm....? Already?"
+join Kris 1
+Kris looks you up and down, almost appearing a bit skeptic. You avert your gaze, the checking makes you a bit nervous. 
+Kris: ...................
+Kris: "So you're the new one, huh?"
+Kris: "Hmmm. You seem excited."
+- "Yes!"
+	Kris: "Hmmm. You seem excited."
+	Kris: "I am too, though it is a bit too early for me to have as much energy as you two.... I haven't had my coffee yet."
+	Bojan: "Kris isn't exactly what you'd call a morning person."
+	"Neither am I."
+	Kris: Kris laughs softly, the tension from before immeadiatly gone.
+	Kris: "We got something in common then."
+- "Who are you calling new here? I am very experienced!"
+	Kris: "Oh right. You are the one who allegedly went on tour with Michael Jackson."
+	Kris: "How old were you again?"
+	26....
+	Kris: Kris raises his eyebrow at you, the same skeptism from earlier creeping back on his face.
+	Kris: "right....."
+	Kris: "Uh."
+	.................
+	Kris: "Well......"
+- Say nothing
+	A silence hangs between the three of you. Kris coughs a bit, as to fill the silence in the room.
+	Kris: "Ah. I didn't mean to startle you. I am sorry."
+Kris: "Welcome to the team, rookie."
+"Thank you, Kri-"
+Ah shit. I almost blew my cover there......... I really have to be more careful.

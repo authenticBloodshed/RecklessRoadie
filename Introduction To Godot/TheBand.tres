@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" load_steps=2 format=3 uid="uid://cf2uelrxl0l4n"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_28cm8"]
+
+[resource]
+script = ExtResource("1_28cm8")
+entries = {
+"Maks": {
+"case_sensitive": true,
+"color": Color(0.909804, 0.25098, 0.25098, 1),
+"name": "Maks",
+"text": "Kris's brother. He also works as a roadie for the band.",
+"title": "Maks"
+},
+"The band": {
+"case_sensitive": false,
+"color": Color(0.976471, 1, 0.580392, 1),
+"name": "The band",
+"text": "The band Bojan, Jan, Jure, Kris and Nace are part of: Joker Out! I have been a long time fan of them, and now I get to be part of their crew! This is so exciting!",
+"title": "Joker Out"
+}
+}
+enabled = true
+_translation_id = ""
+_translation_keys = {}

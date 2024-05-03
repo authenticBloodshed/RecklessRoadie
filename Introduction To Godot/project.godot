@@ -53,6 +53,7 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 text/autocolor_names=true
+glossary/glossary_files=["res://TheBand.tres"]
 
 [display]
 
