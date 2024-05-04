@@ -8,12 +8,22 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "KrisPlaceholder",
 "description": "One of the two guitarist of the band, also does the band's finances.",
 "display_name": "Kris Guštin",
 "mirror": false,
 "nicknames": ["Krisko", "Kris", "Guštin", "KRISKO"],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"KrisPlaceholder": {
+"export_overrides": {
+"image": "\"res://Krisplacehoklder.jpg\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

@@ -31,8 +31,8 @@ Bojan: "Kris should still be in the bus, so let's go check up on him first."
 [background arg="res://Slide_1.max-784x410.png" fade="0.5"]
 Bojan: "KRISKO! The rookie is here!"
 Kris: "hmmmmm....? Already?"
-join Kris 1
-Kris looks you up and down, almost appearing a bit skeptic. You avert your gaze, the checking makes you a bit nervous. 
+join Kris 4 [animation="Slide In Right" length="0.7"]
+Kris looks you up and down, almost appearing a bit skeptic. You avert your gaze, the checking makes you a bit nervous.
 Kris: ...................
 Kris: "So you're the new one, huh?"
 Kris: "Hmmm. You seem excited."
@@ -58,3 +58,26 @@ Kris: "Hmmm. You seem excited."
 Kris: "Welcome to the team, rookie."
 "Thank you, Kri-"
 Ah shit. I almost blew my cover there......... I really have to be more careful.
+You clear your throat. Okay, let's try that one more time.
+"Thank you........ uh....."
+Bojan: "That's Kris! One of our guitarist's and backup vocalist!"
+Kris: "I also do the band's finances."
+Bojan: "And he's my co-writer!"
+Kris: "And the band's main visual appeal."
+Wow......
+- He really can do anything.....
+	He really can do anything, huh...?
+- He's a major show off!
+	He's a major show off!
+	So much for being humble.....
+Bojan: "But of course, his main task is being my best friend!"
+Kris: "And YOUR main task should be showing the new roadie around."
+Kris: "Yet here you are."
+Kris: "Yapping like you got all the time in the world."
+I guess their dynamic really is like it is in the fanfics......
+I cough lightly, adjusting the collar of my shirt. I had almost put on bandmerch this morning. But now I was stuck with plain white.
+Bojan: "Like I said. Kris really isn't a morning person."
+Bojan: "Best to leave him alone until he's accepted that today is yet another day full of work and screaming fans!"
+Kris: Kris mumbles.
+Bojan: "Very well then! On we go! Let's go see where the other's are hanging out!"
+leave Kris
