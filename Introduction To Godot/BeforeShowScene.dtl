@@ -75,9 +75,72 @@ Kris: "And YOUR main task should be showing the new roadie around."
 Kris: "Yet here you are."
 Kris: "Yapping like you got all the time in the world."
 I guess their dynamic really is like it is in the fanfics......
-I cough lightly, adjusting the collar of my shirt. I had almost put on bandmerch this morning. But now I was stuck with plain white.
+You cough lightly, adjusting the collar of your shirt. You had almost put on bandmerch this morning. But now you were stuck with plain white.
 Bojan: "Like I said. Kris really isn't a morning person."
 Bojan: "Best to leave him alone until he's accepted that today is yet another day full of work and screaming fans!"
 Kris: Kris mumbles.
 Bojan: "Very well then! On we go! Let's go see where the other's are hanging out!"
 leave Kris
+[background arg="res://939527894727118848.jpeg" fade="0.5"]
+Bojan: "Hmmmm..... So.... Next......"
+Bojan: "Let's go check out the backstage!"
+leave Bojan
+[background arg="res://backstagelightguitar.png" fade="0.0"]
+It seems like both Jan and Nace are here.......
+Who should I go say hi to first?
+- Nace
+	join Nace 1 [ z_index="3"]
+	<Empty Text Event>
+- Jan
+	join Jan 1 [ z_index="1"]
+	[wait time="1.0"]
+	[update_position position="1" vector="Vector2(2, 0)" time="0.0"]
+	[wait time="1.0"]
+	[update_position position="1" vector="Vector2(-2, 0)" time="0.0"]
+	Jan: Jan mumbles.
+	"Eh......."
+	[update_position position="1" vector="Vector2(2, 0)" time="0.0"]
+	[wait time="1.0"]
+	[update_position position="1" vector="Vector2(-2, 0)" time="0.0"]
+	"Are you. Looking for something....?"
+	Jan: Jan looks up, looking startled.
+	Jan: "Oh. I didn't see you standing there. I'm just busy setting up the sound for soundcheck."
+	Jan: "Are you new here? I don't remember seeing you earlier."
+	You nod.
+	"Oh, yeah. I am the new roadie."
+	Jan: He reaches out his hand, waiting for you to shake it. You take it and shake it firmly.
+	Jan: "Well. You come just in time. Nace and I are getting ready for the show."
+	Jan: "You see. Maks is actually sick... Which is why we hired you so sporadically."
+	Ah shit........
+	Jan: "Oof.... Setting all of this up sure is hard work."
+	"I- I'm sorry. You said who was sick?!"
+	Jan: "Maks. Kris his brother."
+	Fuck. So I did hear it right.
+	"Ah! Is that so.....?"
+	Jan: "Nervous?"
+	- "OBVIOUSLY!"
+		Jan: Jan chuckles lightly.
+		Jan: "You're honest. I like it."
+		Jan: He gives you a pat on the back, probably to help you calm down a bit.
+		Jan: "There there. I am sure you'll do just fine."
+		Jan: "And if not.... Well.... It is your first gig. We will forgive it."
+		So he clearly didn't read my portfolio....... That or he just straight up called my bullshit.
+	- "Yeah...."
+		"Yeah...."
+		Jan: "Reminds me of our first gig ever... God we were dying with nerves. And that was a relatively small club."
+		"I guess you get used to it with experience."
+		Jan: "Sure do. Though sometimes nerves do still strike me."
+		Oh wow. I would habe no clue. He always seems so calm....
+		Jan: "What I am trying to say is.... Don't stress too much okay?"
+		Jan: "The only way forward is by doing it."
+		I guess he does have a point.... Even if my portfolio was total lies, I can still get better.
+		Though speaking of, it doesn't seem like he read it. Or maybe he just (rightfully) doesn't believe it
+	- "Not at all!"
+		"Not at all!"
+		Jan: Jan grins. He seems impressed.
+		Jan: "You're confident. I like it."
+		Jan: "I remember when Maks was new to this roadie stuff, his first gig totally wrecked him."
+		Jan: "It's interesting seeing another perspective from a rookie."
+		So he clearly didn't read my portfolio....... That or he just straight up called my bullshit.
+	Jan: "Hey, Nace! Come say hi to the rookie!"
+	join Nace 1 [ z_index="3"]

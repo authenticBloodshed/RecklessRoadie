@@ -5,6 +5,14 @@
 [resource]
 script = ExtResource("1_28cm8")
 entries = {
+"Fanfic": {
+"alternatives": ["fanfics"],
+"case_sensitive": false,
+"name": "Fanfic",
+"text": "A style of writing for fans by fans, depicting either fictional or real people interacting with each other. Fan fiction is using already existing characters and writing them into new scenarios.",
+"title": "Fanfic"
+},
+"Joker Out": "The band",
 "Maks": {
 "case_sensitive": true,
 "color": Color(0.909804, 0.25098, 0.25098, 1),
@@ -13,12 +21,21 @@ entries = {
 "title": "Maks"
 },
 "The band": {
+"alternatives": ["Joker Out"],
 "case_sensitive": false,
 "color": Color(0.976471, 1, 0.580392, 1),
 "name": "The band",
 "text": "The band Bojan, Jan, Jure, Kris and Nace are part of: Joker Out! I have been a long time fan of them, and now I get to be part of their crew! This is so exciting!",
 "title": "Joker Out"
-}
+},
+"Yapping": {
+"case_sensitive": false,
+"color": Color(0.337255, 0.890196, 0.423529, 1),
+"name": "Yapping",
+"text": "Slang for talking a lot, usually just for the sake of talking. Not always supported by facts or logic.",
+"title": "Yapping"
+},
+"fanfics": "Fanfic"
 }
 enabled = true
 _translation_id = ""
