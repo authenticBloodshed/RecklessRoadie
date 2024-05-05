@@ -1,6 +1,9 @@
-[background arg="res://939527894727118848.jpeg" fade="1.0" transition="Simple Fade"]
+[background arg="res://TOURBUSBojan.png" fade="1.0" transition="Simple Fade"]
 [music path="res://Plastika remix 152bpm mp3.mp3" fade="0.5" volume="-5.0"]
-Bojan: "Hey! Over here!"
+Bojan (Placeholder): "Hey you!"
+[wait time="1.5"]
+Bojan (Placeholder): "Over here!"
+[background arg="res://TOURBUS.png" fade="0.0" transition="Simple Fade"]
 join Bojan 1
 Bojan: "You must be the new roadie!"
 Bojan: "You came just in time. We are just about to begin setting stuff up."
@@ -31,7 +34,7 @@ Bojan: "Kris should still be in the bus, so let's go check up on him first."
 [background arg="res://Slide_1.max-784x410.png" fade="0.5"]
 Bojan: "KRISKO! The rookie is here!"
 Kris: "hmmmmm....? Already?"
-join Kris 4 [animation="Slide In Right" length="0.7"]
+join Kris 3 [animation="Slide In Right" length="0.7" wait="true"]
 Kris looks you up and down, almost appearing a bit skeptic. You avert your gaze, the checking makes you a bit nervous.
 Kris: ...................
 Kris: "So you're the new one, huh?"
@@ -85,12 +88,45 @@ leave Kris
 Bojan: "Hmmmm..... So.... Next......"
 Bojan: "Let's go check out the backstage!"
 leave Bojan
-[background arg="res://backstagelightguitar.png" fade="0.0"]
+[background arg="res://backstagelightguitar.png" fade="1.0"]
 It seems like both Jan and Nace are here.......
 Who should I go say hi to first?
 - Nace
 	join Nace 1 [ z_index="3"]
-	<Empty Text Event>
+	You walk up to Nace, he seems to be practicing one of the songs they're going to play tonight.
+	Plastika.... Nice. You love that song.
+	Nace: Nace looks up from his bass, noticing you standing there. He gives you a big smile.
+	"Hi!"
+	Nace: "Hello. It's so nice to see you."
+	Nace: "I was waiting for you to get here. It's been so long since we got new people on our team...."
+	"I am very excited to be here too! Really it's an honour!"
+	Nace: "I do have bad news...."
+	..............................
+	Nace: "Maks is sick." (and also this is the only reason why we hired you two days before the tour) (but I would never tell you that because I am too nice)
+	Nace: "Bojan thinks your portfolio is good, so he thinks you can replace Maks for the time being."
+	You turn pale. Maks..... is SICK? On your FIRST DAY?
+	"But..... but....!"
+	- "It's my first day!"
+		"It's my first day!"
+		Nace: Nace sighs. He clearly also isn't happy with it.
+		Nace: "I know. The application was kind of our last hope."
+		Great. More pressure. Just what I needed...
+		Nace: "I'm sorry.... I'll do my best to be band member AND roadie today! I already tuned my bass to save you some time."
+		"Thank you so much....."
+	- "That's not what the contract said!"
+		"That's not what the contract said!"
+		Nace: "Jure set up the contract. He's the CEO of Shagedelic Records. I have not read it"
+		So the person who is the CEO ISN'T on finances?!
+		God this is messy....
+		Nace: "Needless to say. I heard from Bojan you have lots of experience, so you should be fine.
+		Yeah. Fanfic experience......
+	join Jan 1 [ z_index="1"]
+	Jan: "What's going on here? I heard someone panic."
+	Nace: "I just dropped the news.... You know... About Maks
+	Jan: "Oh yeah. I forgot he was sick."
+	Nace: "Sorry your first day had to be like this....."
+	"Its okay. I will manage."
+	Nace: Nace smiles at you, your words seem to reassure him a little.
 - Jan
 	join Jan 1 [ z_index="1"]
 	[wait time="1.0"]
@@ -144,3 +180,86 @@ Who should I go say hi to first?
 		So he clearly didn't read my portfolio....... That or he just straight up called my bullshit.
 	Jan: "Hey, Nace! Come say hi to the rookie!"
 	join Nace 1 [ z_index="3"]
+	Nace: "Hey there!"
+	Nace: Nace doesn't spare any more words, he pulls you into a tight hug. Guess he's this cuddly with everyone on the team.
+	Nace: "Welcome to the team!"
+Nace: "I am Nace. I play bass."
+Jan: "Jan Peteh. Guitar's my passion."
+Nace: "Jan is also our token wizz kid. He knows lots of maths stuff."
+Then why is Kris the one doing the finances!?
+Nace: "Have you met up with Kris and Jure yet?"
+"I have met with Kris... But. Where's Jure?"
+Nace: "Jure is trying to get his drumset from the bus."
+Jan: "It is probably heavy.... So. It's taking a while."
+"He is doing all that alone!?!"
+Jan: "Was Kris helping?"
+"Last time I saw Kris, Kris had barely woken up!"
+Jan: "Then yes. He is doing all that alone."
+Nace: "Normally Maks helps but he is sick."
+"My god....."
+You hold your breath. You know you should help but.... Do you really want to? I mean.... You don't even know how to put together an IKEA cabinet!
+Jan: "I think you should help him out, considering Maks can't and you're the only roadie around"
+Jan: "Nace and I are still busy setting up here. If by the time we are done you haven't returned yet, we will help you out."
+Okay then.....
+- "I will try my best!"
+	"I will try my best!"
+	The two men smile at me, they seem pleased
+	Nace: "You got this!"
+	Jan: "Now go get them."
+- "If you insist..."
+	"If you insist..."
+	Jan: "I do insist. It's the best way to make a good first impression!"
+	Nace: "If you need help we'll be here."
+leave --All-- [animation="Fade Out Down" length="1"]
+[background arg="res://TOURBUS.png" fade="0.5"]
+[wait time="1.0"]
+join Jure 1 [ z_index="2"]
+Jure: ..........
+Jure: "Okay.... This is....."
+Jure: Jure places his hand under his chin. He appears to be thinking deeply.
+Jure: He gets the bass drum from the bus. 
+I guess the issue here really is the inconvenience of having to carry each part to the venue....
+"Hi! You're Jure?"
+Jure: Jure looks up. It must be him then.... Well, of course, you knew that. But you are playing the role of a professional here, not a fan.
+Jure: "You are going to help me?"
+"uHHHH. Yes."
+Jure: Jure gives you a big smile, before passing the bass drum over to you. It is quite heavy, but you manage to keep it from dropping.
+Jure: "You carry that and I'll carry..."
+Jure: He searches for something. 
+Jure: "This!"
+A single cymbal....
+If this weren't your favourite band ever, you'd be so pissed right now.....
+join Kris 3
+Kris (KrisNormal): Yaaaaaaaawnnnnnnnnn
+Jure: "Kris! Wanna come help me?"
+Kris: .........
+Kris: "Sure \:D"
+!!!!!!!!
+Some alone time really did make him a lot more friendly!
+Wait..... I sense an oppotunity....
+- Pass the bass drum to Kris.....
+	You hold up your arms, the bass drum hanging between you and Kris.
+	And......
+	He actually takes it!? NO WAY.
+	Oof..... Your arms are sore from the weight.
+	Kris: "Oughhhh... Remind me to never start drumming."
+	Jure: Jure laughs, he is clearly enjoying seeing his fellow band mate struggle.
+	Jure: "Okay. Then... You take this."
+	Jure: Jure hands you the cymbal he was holding, reaching for another one from the bus
+	Much better.....
+	Kris: .............
+	Kris: "Can we please start walking...."
+- No way! I can't do that!
+	No way! I can't do that! 
+	I'll just.... suffer through it....
+	Jure: "Okay then you carry..... This."
+	Jure: He hands Kris another cymbal.
+	You force yourself to smile, trying to ignore the weight of the bass drum in your hands.
+	You tell yourself that you choose for this, and that this is LITERALLY what you signed up for.
+	Who knew being a roadie was such heavy work...... (you did) (But you had reassured it would be worth it in the end)
+	.........
+	"........Let's just get going."
+[wait time="2.0"]
+The three of us ended up setting up Jure's drums.
+[wait time="2.0"]
+leave --All--

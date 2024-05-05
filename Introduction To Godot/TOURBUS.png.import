@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di03jbf3ng41b"
-path="res://.godot/imported/2569de4f1f95c4315bb22499a6b256cc.jpg-ccfc9f0119443a4a5abcbda8e92bde23.ctex"
+uid="uid://c62s4vk02ri2g"
+path="res://.godot/imported/TOURBUS.png-210611e29bc2ffaed82c4b29f84088ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2569de4f1f95c4315bb22499a6b256cc.jpg"
-dest_files=["res://.godot/imported/2569de4f1f95c4315bb22499a6b256cc.jpg-ccfc9f0119443a4a5abcbda8e92bde23.ctex"]
+source_file="res://TOURBUS.png"
+dest_files=["res://.godot/imported/TOURBUS.png-210611e29bc2ffaed82c4b29f84088ef.ctex"]
 
 [params]
 

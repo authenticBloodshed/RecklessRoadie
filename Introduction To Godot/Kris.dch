@@ -8,16 +8,16 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "KrisPlaceholder",
+"default_portrait": "KrisNormal",
 "description": "One of the two guitarist of the band, also does the band's finances.",
 "display_name": "Kris Guštin",
 "mirror": false,
 "nicknames": ["Krisko", "Kris", "Guštin", "KRISKO"],
 "offset": Vector2(0, 0),
 "portraits": {
-"KrisPlaceholder": {
+"KrisNormal": {
 "export_overrides": {
-"image": "\"res://Krisplacehoklder.jpg\""
+"image": "\"KrisNormal.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

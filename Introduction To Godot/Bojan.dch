@@ -17,7 +17,7 @@
 "portraits": {
 "Placeholder": {
 "export_overrides": {
-"image": "\"res://2569de4f1f95c4315bb22499a6b256cc.jpg\""
+"image": "\"res://Placeholder.jpg\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

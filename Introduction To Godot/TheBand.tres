@@ -20,6 +20,20 @@ entries = {
 "text": "Kris's brother. He also works as a roadie for the band.",
 "title": "Maks"
 },
+"Plastika": {
+"case_sensitive": false,
+"color": Color(0.933333, 0.65098, 0.901961, 1),
+"name": "Plastika",
+"text": "One of the songs on the Demoni album.",
+"title": "Plastika"
+},
+"Shagedelic Records": {
+"case_sensitive": true,
+"color": Color(0, 0.882353, 1, 1),
+"name": "Shagedelic Records",
+"text": "The record label of Joker Out, owned by Jure. They made their own record label to ensure they could be 100% independent.",
+"title": "Shagedelic Records"
+},
 "The band": {
 "alternatives": ["Joker Out"],
 "case_sensitive": false,
