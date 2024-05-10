@@ -1,8 +1,8 @@
 [background arg="res://TOURBUSBojan.png" fade="1.0" transition="Simple Fade"]
 [music path="res://Plastika remix 152bpm mp3.mp3" fade="0.5" volume="-5.0"]
-Bojan (Placeholder): "Hey you!"
+Bojan (BojanNormal): "Hey you!"
 [wait time="1.5"]
-Bojan (Placeholder): "Over here!"
+Bojan (BojanNormal): "Over here!"
 [background arg="res://TOURBUS.png" fade="0.0" transition="Simple Fade"]
 join Bojan 1
 Bojan: "You must be the new roadie!"

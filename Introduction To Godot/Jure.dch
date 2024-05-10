@@ -8,12 +8,22 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "JureNormal",
 "description": "",
 "display_name": "Jure Maček",
 "mirror": false,
 "nicknames": ["Jure", "Maček", "Cat", "The Cat"],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"JureNormal": {
+"export_overrides": {
+"image": "\"res://JureNormal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

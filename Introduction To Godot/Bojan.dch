@@ -8,16 +8,16 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "Placeholder",
+"default_portrait": "BojanNormal",
 "description": "The singer of the band",
 "display_name": "Bojan Cvjetićanin",
 "mirror": false,
 "nicknames": ["Bojan", "Cvjetićanin", "Bojci"],
 "offset": Vector2(0, 0),
 "portraits": {
-"Placeholder": {
+"BojanNormal": {
 "export_overrides": {
-"image": "\"res://Placeholder.jpg\""
+"image": "\"res://BojanNormal.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
