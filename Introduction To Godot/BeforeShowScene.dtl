@@ -11,16 +11,16 @@ Bojan: "You came just in time. We are just about to begin setting stuff up."
 At 9 am......?
 - "Of course! I make sure to come prepared!"
 	"Of course! I make sure to come prepared! It is my first day on the job after all....."
-	Bojan: "Oooo! OOOOO! You are excited I see! With an attitude like that, I am sure you'll fit just right in with the band!"
+	Bojan (BojanFlirt): "Oooo! OOOOO! You are excited I see! With an attitude like that, I am sure you'll fit just right in with the band!"
 - "We start working this early...?"
 	"We start working this early...?"
 	Bojan: "You think we asked you to show up at 9 am just for the hell of it?"
 	Bojan: *laughs* "You sound just like Kris when you say that..... He also doesn't like early mornings."
-	Bojan: "OF COURSE we start this early. You knoooow, we actually do everything outselves sooooo....."
+	Bojan (BojanFlirt): "OF COURSE we start this early. You knoooow, we actually do everything outselves sooooo....."
 	He's bragging isn't he......
 	Bojan: "You and Maks are preeeetty much our only roadies. So we need LOTS of time to set everything up. If we don't start this early, the show can't go on!"
 	Great....... So it will all depend on me if Maks can't do something. This sure isn't nervewrecking at all..........
-Bojan: "Oh. SHIT. I forgot to introduce myself."
+Bojan (BojanNormal): "Oh. SHIT. I forgot to introduce myself."
 Oh right.... He doesn't know I am a fan.
 Bojan: "I have to say\: your portfolio is super impressive! I can't believe you were a roadie for Michael Jackson!"
 .................
@@ -73,14 +73,14 @@ Wow......
 - He's a major show off!
 	He's a major show off!
 	So much for being humble.....
-Bojan: "But of course, his main task is being my best friend!"
+Bojan (BojanFlirt): "But of course, his main task is being my best friend!"
 Kris: "And YOUR main task should be showing the new roadie around."
 Kris: "Yet here you are."
 Kris: "Yapping like you got all the time in the world."
 I guess their dynamic really is like it is in the fanfics......
 You cough lightly, adjusting the collar of your shirt. You had almost put on bandmerch this morning. But now you were stuck with plain white.
 Bojan: "Like I said. Kris really isn't a morning person."
-Bojan: "Best to leave him alone until he's accepted that today is yet another day full of work and screaming fans!"
+Bojan (BojanNormal): "Best to leave him alone until he's accepted that today is yet another day full of work and screaming fans!"
 Kris: Kris mumbles.
 Bojan: "Very well then! On we go! Let's go see where the other's are hanging out!"
 leave Kris
@@ -217,7 +217,7 @@ join Jure 1 [ z_index="2"]
 Jure: ..........
 Jure: "Okay.... This is....."
 Jure: Jure places his hand under his chin. He appears to be thinking deeply.
-Jure: He gets the bass drum from the bus. 
+Jure: He gets the bass drum from the bus.
 I guess the issue here really is the inconvenience of having to carry each part to the venue....
 "Hi! You're Jure?"
 Jure: Jure looks up. It must be him then.... Well, of course, you knew that. But you are playing the role of a professional here, not a fan.
@@ -225,7 +225,7 @@ Jure: "You are going to help me?"
 "uHHHH. Yes."
 Jure: Jure gives you a big smile, before passing the bass drum over to you. It is quite heavy, but you manage to keep it from dropping.
 Jure: "You carry that and I'll carry..."
-Jure: He searches for something. 
+Jure: He searches for something.
 Jure: "This!"
 A single cymbal....
 If this weren't your favourite band ever, you'd be so pissed right now.....
@@ -250,7 +250,7 @@ Wait..... I sense an oppotunity....
 	Kris: .............
 	Kris: "Can we please start walking...."
 - No way! I can't do that!
-	No way! I can't do that! 
+	No way! I can't do that!
 	I'll just.... suffer through it....
 	Jure: "Okay then you carry..... This."
 	Jure: He hands Kris another cymbal.
