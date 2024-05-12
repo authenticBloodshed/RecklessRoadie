@@ -26,10 +26,12 @@ directories/dch_directory={
 "Jan": "res://Jan.dch",
 "Jure": "res://Jure.dch",
 "Kris": "res://Kris.dch",
-"Nace": "res://Nace.dch"
+"Nace": "res://Nace.dch",
+"everyone": "res://everyone.dch"
 }
 directories/dtl_directory={
-"BeforeShowScene": "res://BeforeShowScene.dtl"
+"BeforeShowScene": "res://BeforeShowScene.dtl",
+"WinScene": "res://WinScene.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://Textboxes.tres"]

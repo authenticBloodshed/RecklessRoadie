@@ -263,3 +263,49 @@ Wait..... I sense an oppotunity....
 The three of us ended up setting up Jure's drums.
 [wait time="2.0"]
 leave --All--
+[background arg="res://backstagelightguitar.png" fade="1.0" transition="Swipe Left To Right"]
+join Bojan (BojanNormal) 1
+join Jan 1
+join Nace 1
+join Jure 4
+join Kris 3
+"Phew...... That was rough work."
+"Everything going alright here too?"
+Bojan (BojanFlirt): "Look at you! You already speak like a manager!"
+Kris: "Not bad for a first gig."
+Bojan (BojanNormal): "My mic is probably good to go, which is great because we have around...."
+Bojan: Bojan looks at his wrist.
+Bojan: "5 more minutes until soundcheck."
+Jure: "We're lucky we had you help us, because well..... It would've been a disaster if we hadn't...."
+Jure: "The super fans pay to see soundcheck, so not being able to deliver would be...."
+Awful, it would have been awful.
+[background arg="res://backstagedarkguitar.png" fade="0.0"]
+.............
+Nace: "Lights work too, niceeeeeeee."
+Kris: "All things considered, this is going surprisingly well."
+.............
+You cannot tell if that is a compliment or not
+Jan: "Let's do some last minute tuning just in case."
+[sound path="res://117679__kyster__e-open-string.wav" volume="1.0"]
+Jan: "Mine seems to be fine. How's yours, Nace?"
+Nace: "No problems here."
+Jan: "Okay so.... Drum's fine..."
+Jan: "Then we just have........"
+Jan: "Kris?"
+Kris: ...........
+Kris: "I have to go to the bathroom...."
+"Wait, Kris! Your guitar!"
+leave Kris [animation="Slide Out Right" length="1" wait="true"]
+Andddd.... he's gone....
+Fuck!
+Now what?
+[sound path="res://344953__ivolipa__murmur_on_ferry_2.wav" volume="-2.0"]
+Nace: "I can already hear the audience coming in....."
+You suddenly feel very nervous!
+Kris please come back soon! People are waiting for you...
+Bojan: Bojan lets out a huge sigh, guess he is nervous too.... It surprises you a little.
+Bojan: "2 more minutes...."
+Shit shit shit! I have to do something
+Panicking, you reach for the red guitar. You know that one belongs to Kris. 
+Okay.... Okay.... Kris probably won't make it in time.... Then, as a roadie you'll...
+You guess you'll just have to do it yourself!

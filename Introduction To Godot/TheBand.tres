@@ -27,6 +27,13 @@ entries = {
 "text": "One of the songs on the Demoni album.",
 "title": "Plastika"
 },
+"SSF": {
+"case_sensitive": true,
+"color": Color(0.694118, 0.584314, 0.0823529, 1),
+"name": "SSF",
+"text": "Joker Out's chant. No one except the band knows what it stands for, though there are many speculations. It is said either to celebrate, encourage people or before shows.",
+"title": "SSF"
+},
 "Shagedelic Records": {
 "case_sensitive": true,
 "color": Color(0, 0.882353, 1, 1),
