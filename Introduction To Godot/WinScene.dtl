@@ -1,6 +1,7 @@
 [background arg="res://backstagedarknoguitar.png" fade="1.0"]
 join Bojan 1
 join Jan 1
+join Nace 1
 join Jure 4
 Oh my god..... I... I think I did it!
 I actually did it!
@@ -9,7 +10,7 @@ Jure: "Kris's guitar is ready now?"
 Wow.... I can't believe it actually is.....
 join Kris 3 [animation="Bounce In"]
 Kris: "I'm back."
-Kris: Kris holds out his arms, waiting for you to pass over his guitar. 
+Kris: Kris holds out his arms, waiting for you to pass over his guitar.
 Kris: "Is it tuned?"
 You nod, giving him back his guitar with a swift motion. .....Kinda crazy how all these guys are trusting you with something so important like it is nothing.
 Bojan (BojanFlirt): "I knew I hired the right person!"
@@ -18,9 +19,80 @@ Bojan holds out his hand, stretching out his arm. The other boy's place his hand
 Bojan (BojanNormal): "Come on rookie! You too!"
 Hestitantly, you place your hand on top of their's.
 The group lowers their hands, waiting for a bit before throwing them high up into the air.
-everyone: "SFF!"
+everyone: "SSF!"
 Bojan (BojanFlirt): "Now lets make some music! WOOOO!"
 leave --All--
+[sound path="res://209471__sinatra314__footsteps_down_stairs_1.wav" volume="-1.0"]
 With that said, the boy's leave you alone behind the scenes. Wow..... You just barely made it, huh?
 ............. I am never lying on my portfolio again.
 GOD THAT WAS CLOSE!
+Bojan: "GOOOOOD EVENING LONDON!"
+[sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
+Bojan: "Are you guys ready for the FIRST EVER SOUNCHECK RIGHT HERE IN THIS VENUE!"
+[sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
+Bojan: "I know we are. You know. We actually had someone new on board for this part of the tour. I don't know if you guys had heard about them."
+Bojan: "And honestly... It's our crew who makes these tours possible. I'm talking EVERYONE on the tour, from photographers, to lights and audio, and of course our roadies who do all the hard lifting."
+!!!!!! That's me!!!!!
+He's talking about me!!!!
+Bojan: "I think, as always, we should spread the love. With the audience, but also with those who support us along the way. So. I think what I am trying to say is."
+Bojan: "GIVE IT UP FOR THE CREEEEEEEWWWW!"
+[sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
+Bojan: "WOOOOO! YEAH! Joker Out crew!"
+Bojan: "During soundcheck, we always pay songs that are not on the setlist, kind of as a thank you to all baby boo's who cared enough to come see us this early."
+Bojan: "This one.... is called plastika. And I think it's a song many of you will be able to relate to."
+Bojan: "It's a song about beauty standards, and the world and how it treats you."
+Bojan: "GIVE IT UP FOR PLASTIKAAAAA!"
+[sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
+Bojan: "Let's get to it!"
+[music path="res://with vocal Plastika remix 152bpm mp3.mp3" fade="1.0" volume="2.0"]
+You did it..... You actually did it....
+You feel a smile creep on your face as you peek onto the stage from behind the curtain.
+Something about knowing you helped set this all up... makes hearing this song extra special to you.
+This all worked out just like how you wanted it to.....
+You will never be a nameless fan anymore, from now on, you are the roadie that saved the show that one time Maks was sick!
+Yeah! Take that insecurities! 
+[wait time="2.0"]
+And then.... before you realised it, soundcheck was already over
+[wait time="2.0"]
+join Bojan 1
+join Jan 1
+join Jure 3
+join Kris 4
+join Nace 1
+Jan: "Good soundcheck everyone. Nice going on the bass Nace."
+Nace: Nace grins, looking pleased with both the praise and his performance.
+Nace: "I was practicing before the show."
+Humble as always.....
+Jure: "Now all we gotta do is wait until the show starts! This is the boring part."
+Bojan: "Doesn't have to be. Y'all wanna play Uno?"
+- "Let's play jenga instead"
+	"Let's play Jenga instead."
+	Jure: "Oh yeah. Let's! I am the Jenga master."
+	Jure: "I win most of the time. Because I'm a drummer I'm very good with my hands."
+	Nace: "I will win this time."
+	Bojan: "Nuh uh! Watch me beat all of you."
+	everyone: All of them laugh softly, making sure they don't make too much noise. The audience would be able to hear us if we did.
+	Nace: "Let's see who will be crowned the Jenga king."
+	[wait time="1.0"]
+	We all played Jenga together
+	[wait time="1.0"]
+	You totally won, by the way.
+- "Sure! Why not!"
+	"Sure! why not!"
+	Bojan (BojanFlirt): "I have to warn you though, I never lose."
+	Kris: Kris looks at Bojan. He doesn't seem like he believes that.
+	Kris: "Try to hold back so the rookie has a chance to win won't you?"
+	Jure: "I won't."
+	Jan: "Me neither."
+	You laugh softly, making sure the audience won't hear you. They stay in the venue after soundcheck... Early entrance tickets.
+	Nace: "Let's see who will be crowned the Uno king."
+	[wait time="1.0"]
+	We all played Uno together
+	[wait time="1.0"]
+	You totally won, by the way.
+Developer: Hey there! I am the developer of Reckless Roadie.
+Developer: This marks the end of the global playtest! Thank you so much for playing!
+Developer: Please remember the fill in the survey so I can keep building on this game to make it the best it can be! Your feedback allows me to see where the game needs improving.
+Developer: Thank you a lot and I hope to see you soon, at the full release planned for August!
+Developer: The full release is planned to be about 30 - 45 minutes long, and will have another minigame and of course lots more Joker Out shenanigans, so GET EXCITED!
+Developer: Lots of love and SSF, your developer <3

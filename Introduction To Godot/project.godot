@@ -23,6 +23,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Bojan": "res://Bojan.dch",
+"Developer": "res://Developer.dch",
 "Jan": "res://Jan.dch",
 "Jure": "res://Jure.dch",
 "Kris": "res://Kris.dch",
@@ -31,6 +32,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "BeforeShowScene": "res://BeforeShowScene.dtl",
+"LoseScene": "res://LoseScene.dtl",
 "WinScene": "res://WinScene.dtl"
 }
 glossary/default_case_sensitive=true
