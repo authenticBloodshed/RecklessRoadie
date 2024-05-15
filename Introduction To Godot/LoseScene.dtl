@@ -1,7 +1,7 @@
 [background arg="res://backstagedarknoguitar.png" fade="1.0"]
 join Bojan 1
-join Jan 1
-join Nace 1
+join Jan 2
+join Nace 0
 join Jure 4
 Oh my god...... That was a total flop...
 I don't think I can do it before Kris returns!
@@ -62,9 +62,9 @@ Bojan: "ALLLL RIGHTY THEN! GIVE IT UP FOR PLASTIKA!"
 [music path="res://with vocal Plastika remix 152bpm mp3.mp3" fade="1.0" volume="1.0"]
 [wait time="2.0"]
 And then.... before you realised it, soundcheck was already over
-join Bojan 1
-join Jan 1
-join Jure 3
+join Bojan 2
+join Jan 3
+join Jure 1
 join Kris 4
 join Nace 1
 Jan: "Good soundcheck everyone. Nice going on the bass Nace."
@@ -115,6 +115,8 @@ Bojan: "Doesn't have to be. Y'all wanna play Uno?"
 	You totally won, by the way.
 	Which you suppose made your image a BIT better..... You may not be able to tune guitars, but GOD are you good at Uno. (which, let's be honest, is mostly luck based and doesn't require much actual skill)
 	But still! You won!! Go you!
+leave --All--
+join Developer 2 [animation="Slide In Up" wait="true"]
 Developer: Hey there! I am the developer of Reckless Roadie.
 Developer: This marks the end of the global playtest! Thank you so much for playing!
 Developer: Please remember the fill in the survey so I can keep building on this game to make it the best it can be! Your feedback allows me to see where the game needs improving.
