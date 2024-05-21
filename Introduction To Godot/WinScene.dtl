@@ -1,14 +1,14 @@
 [background arg="res://backstagedarknoguitar.png" fade="1.0"]
-join Bojan 1
-join Jan 1
-join Nace 1
+join Bojan 0
+join Jan 2
+join Nace 3
 join Jure 4
 Oh my god..... I... I think I did it!
 I actually did it!
 Jure: "Kris's guitar is ready now?"
 "Yes! It is!"
 Wow.... I can't believe it actually is.....
-join Kris 3 [animation="Bounce In"]
+join Kris 1 [animation="Bounce In"]
 Kris: "I'm back."
 Kris: Kris holds out his arms, waiting for you to pass over his guitar.
 Kris: "Is it tuned?"
@@ -50,14 +50,14 @@ You feel a smile creep on your face as you peek onto the stage from behind the c
 Something about knowing you helped set this all up... makes hearing this song extra special to you.
 This all worked out just like how you wanted it to.....
 You will never be a nameless fan anymore, from now on, you are the roadie that saved the show that one time Maks was sick!
-Yeah! Take that insecurities! 
+Yeah! Take that insecurities!
 [wait time="2.0"]
 And then.... before you realised it, soundcheck was already over
 [wait time="2.0"]
-join Bojan 1
-join Jan 1
+join Bojan 0
+join Jan 4
 join Jure 3
-join Kris 4
+join Kris 2
 join Nace 1
 Jan: "Good soundcheck everyone. Nice going on the bass Nace."
 Nace: Nace grins, looking pleased with both the praise and his performance.
@@ -90,6 +90,8 @@ Bojan: "Doesn't have to be. Y'all wanna play Uno?"
 	We all played Uno together
 	[wait time="1.0"]
 	You totally won, by the way.
+leave --All--
+join Developer 2
 Developer: Hey there! I am the developer of Reckless Roadie.
 Developer: This marks the end of the global playtest! Thank you so much for playing!
 Developer: Please remember the fill in the survey so I can keep building on this game to make it the best it can be! Your feedback allows me to see where the game needs improving.

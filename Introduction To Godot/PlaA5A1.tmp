@@ -1,0 +1,95 @@
+[gd_scene load_steps=11 format=3 uid="uid://duq5mwivbrmgy"]
+
+[ext_resource type="Texture2D" uid="uid://b1i2o8gnpc3ts" path="res://bar.png" id="2_4n2te"]
+[ext_resource type="Texture2D" uid="uid://bbew7vrtkuahg" path="res://square.png" id="3_d12hv"]
+[ext_resource type="Script" path="res://Target.gd" id="4_hvw4a"]
+[ext_resource type="Script" path="res://Player.gd" id="5_lqpf0"]
+[ext_resource type="Texture2D" uid="uid://dpted78kifhjw" path="res://pngimg.com - circle_PNG49.png" id="6_tirbu"]
+[ext_resource type="Script" path="res://WinTimer.gd" id="7_hicuc"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4abqt"]
+polygon = PackedVector2Array(-150.002, -84.2262, -150.002, -74.1071, -150.002, -57.4405, -150.002, -34.2262, -150.002, -4.16667, -150.002, 17.8571, -150.002, 39.5833, -150.002, 72.619, -150.002, 83.9286, 146.877, 83.9286, 150.002, 83.9286, 150.002, 78.5714, 150.002, 70.5357, 150.002, 63.9881, 150.002, 55.3571, 150.002, 46.7262, 150.002, 37.5, 150.002, 31.5476, 150.002, 22.0238, 150.002, 13.3929, 150.002, 4.7619, 150.002, -3.57143, 150.002, -17.2619, 150.002, -27.6786, 150.002, -37.7976, 150.002, -48.2143, 150.002, -56.25, 150.002, -66.6667, 150.002, -76.4881, 150.002, -83.9286, -3.12506, -83.9286, -121.877, -83.9286)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5b4k"]
+size = Vector2(266.886, 192.297)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gq710"]
+size = Vector2(198.89, 200.671)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x5e02"]
+radius = 24.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Bar" type="Sprite2D" parent="."]
+position = Vector2(170, 322)
+scale = Vector2(0.355957, 0.624677)
+texture = ExtResource("2_4n2te")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Bar"]
+position = Vector2(2.80933, 4.80243)
+scale = Vector2(0.89897, 5.37878)
+occluder = SubResource("OccluderPolygon2D_4abqt")
+
+[node name="Top" type="Area2D" parent="Bar" groups=["boundary"]]
+visible = false
+
+[node name="TopCollision" type="CollisionShape2D" parent="Bar/Top"]
+position = Vector2(2.80933, -531.475)
+shape = SubResource("RectangleShape2D_l5b4k")
+
+[node name="Bottom" type="Area2D" parent="Bar" groups=["boundary"]]
+visible = false
+
+[node name="BottomCollision" type="CollisionShape2D" parent="Bar/Bottom"]
+position = Vector2(2.80933, 521.87)
+shape = SubResource("RectangleShape2D_l5b4k")
+
+[node name="Target" type="Sprite2D" parent="." groups=["tagret"]]
+position = Vector2(169, 324)
+scale = Vector2(0.422343, 0.189364)
+texture = ExtResource("3_d12hv")
+script = ExtResource("4_hvw4a")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Target" groups=["target"]]
+visible = false
+
+[node name="Area2D" type="Area2D" parent="Target" groups=["tagret"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Target/Area2D"]
+position = Vector2(3.05176e-05, 0)
+scale = Vector2(1.00423, 1.02802)
+shape = SubResource("RectangleShape2D_gq710")
+
+[node name="Player" type="CharacterBody2D" parent="." node_paths=PackedStringArray("winTimer")]
+position = Vector2(167, 222)
+script = ExtResource("5_lqpf0")
+winTimer = NodePath("Timer")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(1, 101)
+scale = Vector2(0.024625, 0.025125)
+texture = ExtResource("6_tirbu")
+
+[node name="Area2D" type="Area2D" parent="Player" groups=["player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
+position = Vector2(1, 101)
+shape = SubResource("CircleShape2D_x5e02")
+
+[node name="Timer" type="Timer" parent="Player" node_paths=PackedStringArray("currentScene")]
+wait_time = 15.0
+one_shot = true
+script = ExtResource("7_hicuc")
+currentScene = NodePath("../..")
+
+[node name="Label" type="Label" parent="Player/Timer"]
+offset_left = 79.0
+offset_top = 39.0
+offset_right = 119.0
+offset_bottom = 62.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Player/Area2D" to="Player" method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="Player/Timer" to="Player/Timer" method="_on_timeout"]

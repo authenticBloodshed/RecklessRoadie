@@ -2,6 +2,7 @@ extends Sprite2D
 
 var random = Vector2(0, randf_range(-20, 20))
 var motion = Vector2(0, -1)
+var canTune = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,11 +15,8 @@ func _process(delta):
 	position += random * delta
 	
 		# Allows the player to jump
-	if Input.is_action_pressed("Tune"):
-		
-		self_modulate.a8 = 10
-		await get_tree().create_timer(0.1).timeout
-		self_modulate.a8 = 30
+	if Input.is_action_pressed("Tune") and canTune == 1:
+		canTune = 0
 		await get_tree().create_timer(0.1).timeout
 		self_modulate.a8 = 60
 		await get_tree().create_timer(0.1).timeout
@@ -43,6 +41,7 @@ func _process(delta):
 		self_modulate.a8 = 10
 		await get_tree().create_timer(0.1).timeout
 		self_modulate.a8 = 0
+		canTune = 1
 	
 	#Makes the target bounce against the borders
 	if position.y > 569 or position.y < 65:

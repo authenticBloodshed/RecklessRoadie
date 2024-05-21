@@ -1,18 +1,8 @@
 extends Timer
 class_name WinTimer
 
-@export var player:CharacterBody2D
-@export var bar:Sprite2D
-@export var target:Sprite2D
-@export var timer:Label
-@export var collision:CollisionShape2D
-@export var area2D:Area2D
-@export var player2:CharacterBody2D
-@export var bar2:Sprite2D
-@export var target2:Sprite2D
-@export var timer2:Label
-@export var collision2:CollisionShape2D
-@export var area2D2:Area2D
+@export var currentScene: Node2D
+var nextScene: PackedScene
 
 func _ready():
 	start()
@@ -20,6 +10,7 @@ func _ready():
 
 func startTimer():
 	paused = false
+	nextScene = load("res://Player1.tscn")
 	
 func pauseTimer():
 	paused = true
@@ -30,25 +21,14 @@ func _process(delta):
 
 func _on_timeout():
 	print("Win")
-	player.process_mode = Node.PROCESS_MODE_DISABLED
-	player.visible = false
-	bar.process_mode = Node.PROCESS_MODE_DISABLED
-	bar.visible = false
-	target.process_mode = Node.PROCESS_MODE_DISABLED
-	target.visible = false
-	timer.process_mode = Node.PROCESS_MODE_DISABLED
-	timer.visible = false
-	collision.process_mode = Node.PROCESS_MODE_DISABLED
-	area2D.process_mode = Node.PROCESS_MODE_DISABLED
-	player2.process_mode = Node.PROCESS_MODE_INHERIT
-	player2.visible = true
-	bar2.process_mode = Node.PROCESS_MODE_INHERIT
-	bar2.visible = true
-	target2.process_mode = Node.PROCESS_MODE_INHERIT
-	target2.visible = true
-	timer2.process_mode = Node.PROCESS_MODE_INHERIT
-	timer2.visible = true
-	collision2.process_mode = Node.PROCESS_MODE_INHERIT
-	area2D2.process_mode = Node.PROCESS_MODE_INHERIT
+	Global.currentPlayer += 1
+	if Global.currentPlayer == 6:
+		get_tree().change_scene_to_file("res://WinScreen.tscn")
 	
-
+	var scene: Node2D = nextScene.instantiate()
+	get_tree().root.add_child(scene)
+	
+	scene.global_position = scene.global_position + Vector2(100 * Global.currentPlayer, 0)
+	
+	currentScene.queue_free()
+	

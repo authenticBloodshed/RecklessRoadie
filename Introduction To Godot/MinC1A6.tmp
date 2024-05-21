@@ -57,7 +57,7 @@ stream = ExtResource("14_h56av")
 volume_db = 2.0
 autoplay = true
 
-[node name="One" parent="." instance=ExtResource("15_u2ycp")]
+[node name="Node2D" parent="." instance=ExtResource("15_u2ycp")]
 position = Vector2(1, 0)
 
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
