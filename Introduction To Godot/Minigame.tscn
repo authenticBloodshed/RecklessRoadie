@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=9 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="AudioStream" uid="uid://bx2r3121ramna" path="res://117679__kyster__e-open-string.wav" id="5_ho4a2"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://TimerGame.gd" id="8_m6r7t"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="10_y1r4w"]
 [ext_resource type="Script" path="res://PlaySound.gd" id="13_ff4px"]
-[ext_resource type="AudioStream" uid="uid://bkpy2nfbrggfq" path="res://Plastika remix 152bpm mp3.mp3" id="14_h56av"]
 [ext_resource type="PackedScene" uid="uid://duq5mwivbrmgy" path="res://Player1.tscn" id="15_u2ycp"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4xtig"]
@@ -51,11 +50,6 @@ offset_right = 1011.0
 offset_bottom = 31.0
 scale = Vector2(4.4, 3.24)
 label_settings = SubResource("LabelSettings_4xtig")
-
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_h56av")
-volume_db = 2.0
-autoplay = true
 
 [node name="One" parent="." instance=ExtResource("15_u2ycp")]
 position = Vector2(1, 0)

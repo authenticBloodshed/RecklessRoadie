@@ -7,8 +7,8 @@ Bojan (BojanNormal): "Over here!"
 join Bojan 1
 Bojan: "You must be the new roadie!"
 Bojan: "You came just in time. We are just about to begin setting stuff up."
-...............
 At 9 am......?
+...............
 - "Of course! I make sure to come prepared!"
 	"Of course! I make sure to come prepared! It is my first day on the job after all....."
 	Bojan (BojanFlirt): "Oooo! OOOOO! You are excited I see! With an attitude like that, I am sure you'll fit just right in with the band!"
@@ -39,7 +39,6 @@ join Kris 3 [animation="Slide In Right" length="0.7" wait="true"]
 Kris looks you up and down, almost appearing a bit skeptic. You avert your gaze, the checking makes you a bit nervous.
 Kris: ...................
 Kris: "So you're the new one, huh?"
-Kris: "Hmmm. You seem excited."
 - "Yes!"
 	Kris: "Hmmm. You seem excited."
 	Kris: "I am too, though it is a bit too early for me to have as much energy as you two.... I haven't had my coffee yet."
@@ -50,7 +49,7 @@ Kris: "Hmmm. You seem excited."
 - "Who are you calling new here? I am very experienced!"
 	Kris: "Oh right. You are the one who allegedly went on tour with Michael Jackson."
 	Kris: "How old were you again?"
-	26....
+	"26...."
 	Kris: Kris raises his eyebrow at you, the same skeptism from earlier creeping back on his face.
 	Kris: "right....."
 	Kris: "Uh."
@@ -117,14 +116,14 @@ Who should I go say hi to first?
 		"Thank you so much....."
 	- "That's not what the contract said!"
 		"That's not what the contract said!"
-		Nace: "Jure set up the contract. He's the CEO of Shagedelic Records. I have not read it"
+		Nace: "Jure set up the contract. He's the CEO of Shagedelic Records. I have not read it."
 		So the person who is the CEO ISN'T on finances?!
 		God this is messy....
 		Nace: "Needless to say. I heard from Bojan you have lots of experience, so you should be fine.
 		Yeah. Fanfic experience......
 	join Jan 2 [ z_index="1"]
 	Jan: "What's going on here? I heard someone panic."
-	Nace: "I just dropped the news.... You know... About Maks
+	Nace: "I just dropped the news.... You know... About Maks."
 	Jan: "Oh yeah. I forgot he was sick."
 	Nace: "Sorry your first day had to be like this....."
 	"Its okay. I will manage."
@@ -136,6 +135,8 @@ Who should I go say hi to first?
 	[wait time="1.0"]
 	[update_position position="1" vector="Vector2(-15, 0)" time="1.0"]
 	Jan: Jan mumbles.
+	Jan: "Where is the damn wire....."
+	Jan: Jan bites his lip, a puzzled expression on his face.
 	"Eh......."
 	[update_position position="1" vector="Vector2(15, 0)" time="1.0"]
 	[wait time="1.0"]
@@ -168,7 +169,7 @@ Who should I go say hi to first?
 		Jan: "Reminds me of our first gig ever... God we were dying with nerves. And that was a relatively small club."
 		"I guess you get used to it with experience."
 		Jan: "Sure do. Though sometimes nerves do still strike me."
-		Oh wow. I would habe no clue. He always seems so calm....
+		Oh wow. I would have no clue. He always seems so calm....
 		Jan: "What I am trying to say is.... Don't stress too much okay?"
 		Jan: "The only way forward is by doing it."
 		I guess he does have a point.... Even if my portfolio was total lies, I can still get better.
@@ -200,12 +201,12 @@ Jan: "Then yes. He is doing all that alone."
 Nace: "Normally Maks helps but he is sick."
 "My god....."
 You hold your breath. You know you should help but.... Do you really want to? I mean.... You don't even know how to put together an IKEA cabinet!
-Jan: "I think you should help him out, considering Maks can't and you're the only roadie around"
+Jan: "I think you should help him out, considering Maks can't and you're the only roadie around."
 Jan: "Nace and I are still busy setting up here. If by the time we are done you haven't returned yet, we will help you out."
 Okay then.....
 - "I will try my best!"
 	"I will try my best!"
-	The two men smile at me, they seem pleased
+	The two men smile at me, they seem pleased.
 	Nace: "You got this!"
 	Jan: "Now go get them."
 - "If you insist..."
@@ -233,7 +234,7 @@ Jure (JureNormal): "This!"
 A single cymbal....
 If this weren't your favourite band ever, you'd be so pissed right now.....
 join Kris 3
-Kris (KrisNormal): Yaaaaaaaawnnnnnnnnn
+Kris (KrisNormal): Yaaaaaaaawnnnnnnnnn.
 Jure: "Kris! Wanna come help me?"
 Kris (KrisNormal): .........
 Kris (KrisSassy): "Sure \:D"
@@ -248,7 +249,7 @@ Wait..... I sense an oppotunity....
 	Kris (KrisNormal): "Oughhhh... Remind me to never start drumming."
 	Jure: Jure laughs, he is clearly enjoying seeing his fellow band mate struggle.
 	Jure: "Okay. Then... You take this."
-	Jure: Jure hands you the cymbal he was holding, reaching for another one from the bus
+	Jure: Jure hands you the cymbal he was holding, reaching for another one from the bus.
 	Much better.....
 	Kris: .............
 	Kris: "Can we please start walking...."
@@ -296,7 +297,7 @@ Awful, it would have been awful.
 Nace: "Lights work too, niceeeeeeee."
 Kris (KrisNormal): "All things considered, this is going surprisingly well."
 .............
-You cannot tell if that is a compliment or not
+You cannot tell if that is a compliment or not.
 Jan: "Let's do some last minute tuning just in case."
 [sound path="res://117679__kyster__e-open-string.wav" volume="1.0"]
 Jan: "Mine seems to be fine. How's yours, Nace?"
@@ -319,7 +320,7 @@ Kris please come back soon! People are waiting for you...
 Bojan: Bojan lets out a huge sigh, guess he is nervous too.... It surprises you a little.
 Bojan: "2 more minutes...."
 [sound path="res://407696__170134__heartbeat.wav" volume="6.0"]
-Shit shit shit! I have to do something
+Shit shit shit! I have to do something!
 Panicking, you reach for the red guitar. You know that one belongs to Kris.
 Okay.... Okay.... Kris probably won't make it in time.... Then, as a roadie you'll...
 You guess you'll just have to do it yourself!
