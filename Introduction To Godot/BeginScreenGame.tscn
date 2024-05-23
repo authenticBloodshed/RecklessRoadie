@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://crvh8quebjwev"]
+[gd_scene load_steps=12 format=3 uid="uid://crvh8quebjwev"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_xkp8x"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_bxe84"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="4_msuwu"]
 [ext_resource type="Script" path="res://StartDialogue.gd" id="5_pjxke"]
 [ext_resource type="Script" path="res://QuitButton.gd" id="6_b6tm7"]
+[ext_resource type="Texture2D" uid="uid://8rw021ba7vmq" path="res://exit.png" id="7_o82rm"]
 
 [sub_resource type="Theme" id="Theme_784ac"]
 default_font = ExtResource("4_msuwu")
@@ -58,9 +59,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 797.0
+offset_left = 655.0
 offset_top = 526.0
-offset_right = 1031.0
+offset_right = 889.0
 offset_bottom = 612.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -71,6 +72,11 @@ theme_override_constants/outline_size = 5
 theme_override_styles/normal = SubResource("StyleBoxEmpty_8pqoa")
 text = "Clock out!"
 script = ExtResource("6_b6tm7")
+
+[node name="Exit" type="Sprite2D" parent="."]
+position = Vector2(757.75, 300.5)
+scale = Vector2(0.180833, 0.191)
+texture = ExtResource("7_o82rm")
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
 [connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]
