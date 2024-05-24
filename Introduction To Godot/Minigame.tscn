@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8lg3dxh6xjmh"]
+[gd_scene load_steps=10 format=3 uid="uid://b8lg3dxh6xjmh"]
 
 [ext_resource type="Texture2D" uid="uid://dyrsifpib1p31" path="res://backstagedarknoguitar.png" id="1_xg5x0"]
 [ext_resource type="AudioStream" uid="uid://bx2r3121ramna" path="res://117679__kyster__e-open-string.wav" id="5_ho4a2"]
 [ext_resource type="Texture2D" uid="uid://bc0kpcm4syh5g" path="res://luz_png__1__by_martismiler_d5u57b9-fullview.png" id="7_k8dnp"]
+[ext_resource type="AudioStream" uid="uid://bkpy2nfbrggfq" path="res://Plastika remix 152bpm mp3.mp3" id="8_jyeym"]
 [ext_resource type="Script" path="res://TimerGame.gd" id="8_m6r7t"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="10_y1r4w"]
 [ext_resource type="Script" path="res://PlaySound.gd" id="13_ff4px"]
@@ -53,5 +54,10 @@ label_settings = SubResource("LabelSettings_4xtig")
 
 [node name="One" parent="." instance=ExtResource("15_u2ycp")]
 position = Vector2(1, 0)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_jyeym")
+volume_db = 2.0
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
