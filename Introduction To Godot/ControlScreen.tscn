@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://bafc0xepe2nv3"]
+[gd_scene load_steps=13 format=3 uid="uid://bafc0xepe2nv3"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_oa0x7"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_080vd"]
+[ext_resource type="Script" path="res://AnimationBackground.gd" id="3_s4umg"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_uscet"]
 [ext_resource type="Texture2D" uid="uid://8crpoilp6v5q" path="res://tutorialsquare.png" id="4_68xib"]
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="5_eqa4o"]
 [ext_resource type="Script" path="res://StartButton.gd" id="6_h3qiw"]
+[ext_resource type="VideoStream" path="res://TutVideo.ogv" id="7_d7pbb"]
 
 [sub_resource type="Theme" id="Theme_hnti4"]
 default_font = ExtResource("3_uscet")
@@ -34,18 +36,12 @@ position = Vector2(571.5, 323)
 scale = Vector2(0.389667, 0.218667)
 texture = ExtResource("1_oa0x7")
 
-[node name="Dots" type="Sprite2D" parent="Sprite2D"]
-modulate = Color(1, 1, 1, 0.454902)
-position = Vector2(-441.332, -1455.25)
-scale = Vector2(1.69808, 2.91397)
-texture = ExtResource("2_080vd")
-
 [node name="Controls" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 373.0
-offset_top = 167.0
+offset_top = 54.0
 offset_right = 766.0
-offset_bottom = 248.0
+offset_bottom = 135.0
 theme = SubResource("Theme_hnti4")
 theme_override_colors/font_outline_color = Color(0.619608, 0.32549, 0.686275, 1)
 theme_override_constants/outline_size = 6
@@ -103,5 +99,22 @@ Spacebar:
 Use tuner!
 
 "
+
+[node name="Halftone" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.435294)
+position = Vector2(437, 1260)
+texture = ExtResource("2_080vd")
+script = ExtResource("3_s4umg")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 143.0
+offset_right = 2172.0
+offset_bottom = 1231.0
+scale = Vector2(0.342842, 0.347578)
+stream = ExtResource("7_d7pbb")
+autoplay = true
+loop = true
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
