@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://dver56n4kwo3v"]
+[gd_scene load_steps=16 format=3 uid="uid://dver56n4kwo3v"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_ul4ql"]
 [ext_resource type="Texture2D" uid="uid://kktgq6p072y3" path="res://tutorialtextbox.png" id="1_x6qwb"]
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="1_ykyrh"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_w8tj2"]
 [ext_resource type="Texture2D" uid="uid://8crpoilp6v5q" path="res://tutorialsquare.png" id="3_nn8mg"]
+[ext_resource type="Script" path="res://AnimationBackground.gd" id="3_s17sp"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="3_vj2fm"]
 [ext_resource type="FontFile" uid="uid://lyh0tftt7x8e" path="res://Fontspring-DEMO-prettyboy-semibold.otf" id="4_ht25a"]
 [ext_resource type="Script" path="res://ControlsButton.gd" id="6_vcgcj"]
@@ -52,11 +53,11 @@ position = Vector2(573.5, 322.5)
 scale = Vector2(0.385667, 0.218333)
 texture = ExtResource("1_ul4ql")
 
-[node name="Dots" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.454902)
-position = Vector2(719, 610.5)
-scale = Vector2(0.863333, 0.794333)
+[node name="Halftone" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.301961)
+position = Vector2(477, 1495)
 texture = ExtResource("2_w8tj2")
+script = ExtResource("3_s17sp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(576.5, 145.625)

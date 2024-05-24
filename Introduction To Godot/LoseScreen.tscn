@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://bvlpklmojmwi8"]
+[gd_scene load_steps=13 format=3 uid="uid://bvlpklmojmwi8"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_cyhbn"]
 [ext_resource type="FontFile" uid="uid://bsl22kqe01g6y" path="res://Tullamore DEMO.otf" id="2_e6cbo"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_mx1oe"]
+[ext_resource type="Script" path="res://AnimationBackground.gd" id="3_47t7p"]
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="4_1ogb1"]
 [ext_resource type="Script" path="res://StartButton.gd" id="5_1syme"]
 [ext_resource type="Script" path="res://QuitButton.gd" id="6_1mgbs"]
@@ -35,11 +36,11 @@ position = Vector2(576.5, 323.5)
 scale = Vector2(0.385, 0.217)
 texture = ExtResource("1_cyhbn")
 
-[node name="Dots" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.454902)
-position = Vector2(284.5, 125.5)
-scale = Vector2(1.04833, 0.807)
+[node name="Halftone" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.301961)
+position = Vector2(477, 1495)
 texture = ExtResource("2_mx1oe")
+script = ExtResource("3_47t7p")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1

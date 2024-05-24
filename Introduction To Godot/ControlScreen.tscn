@@ -36,6 +36,12 @@ position = Vector2(571.5, 323)
 scale = Vector2(0.389667, 0.218667)
 texture = ExtResource("1_oa0x7")
 
+[node name="Halftone" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.435294)
+position = Vector2(437, 1260)
+texture = ExtResource("2_080vd")
+script = ExtResource("3_s4umg")
+
 [node name="Controls" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 373.0
@@ -99,12 +105,6 @@ Spacebar:
 Use tuner!
 
 "
-
-[node name="Halftone" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.435294)
-position = Vector2(437, 1260)
-texture = ExtResource("2_080vd")
-script = ExtResource("3_s4umg")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 0
