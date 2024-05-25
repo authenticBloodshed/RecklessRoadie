@@ -159,16 +159,16 @@ Who should I go say hi to first?
 	Jan: "Nervous?"
 	- "OBVIOUSLY!"
 		Jan: Jan chuckles lightly.
-		Jan: "You're honest. I like it."
+		Jan (JanPeace): "You're honest. I like it."
 		Jan: He gives you a pat on the back, probably to help you calm down a bit.
 		Jan: "There there. I am sure you'll do just fine."
-		Jan: "And if not.... Well.... It is your first gig. We will forgive it."
+		Jan (JanNormal): "And if not.... Well.... It is your first gig. We will forgive it."
 		So he clearly didn't read my portfolio....... That or he just straight up called my bullshit.
 	- "Yeah...."
 		"Yeah...."
-		Jan: "Reminds me of our first gig ever... God we were dying with nerves. And that was a relatively small club."
+		Jan (JanPeace): "Reminds me of our first gig ever... God we were dying with nerves. And that was a relatively small club."
 		"I guess you get used to it with experience."
-		Jan: "Sure do. Though sometimes nerves do still strike me."
+		Jan (JanNormal): "Sure do. Though sometimes nerves do still strike me."
 		Oh wow. I would have no clue. He always seems so calm....
 		Jan: "What I am trying to say is.... Don't stress too much okay?"
 		Jan: "The only way forward is by doing it."
@@ -176,24 +176,24 @@ Who should I go say hi to first?
 		Though speaking of, it doesn't seem like he read it. Or maybe he just (rightfully) doesn't believe it
 	- "Not at all!"
 		"Not at all!"
-		Jan: Jan grins. He seems impressed.
+		Jan (JanPeace): Jan grins. He seems impressed.
 		Jan: "You're confident. I like it."
 		Jan: "I remember when Maks was new to this roadie stuff, his first gig totally wrecked him."
-		Jan: "It's interesting seeing another perspective from a rookie."
+		Jan (JanNormal): "It's interesting seeing another perspective from a rookie."
 		So he clearly didn't read my portfolio....... That or he just straight up called my bullshit.
-	Jan: "Hey, Nace! Come say hi to the rookie!"
+	Jan (JanNormal): "Hey, Nace! Come say hi to the rookie!"
 	join Nace 1 [ z_index="3"]
 	Nace: "Hey there!"
 	Nace: Nace doesn't spare any more words, he pulls you into a tight hug. Guess he's this cuddly with everyone on the team.
 	Nace: "Welcome to the team!"
 Nace: "I am Nace. I play bass."
-Jan: "Jan Peteh. Guitar's my passion."
+Jan (JanPeace): "Jan Peteh. Guitar's my passion."
 Nace: "Jan is also our token wizz kid. He knows lots of maths stuff."
 Then why is Kris the one doing the finances!?
 Nace: "Have you met up with Kris and Jure yet?"
 "I have met with Kris... But. Where's Jure?"
 Nace: "Jure is trying to get his drumset from the bus."
-Jan: "It is probably heavy.... So. It's taking a while."
+Jan (JanNormal): "It is probably heavy.... So. It's taking a while."
 "He is doing all that alone!?!"
 Jan: "Was Kris helping?"
 "Last time I saw Kris, Kris had barely woken up!"
@@ -207,8 +207,8 @@ Okay then.....
 - "I will try my best!"
 	"I will try my best!"
 	The two men smile at me, they seem pleased.
-	Nace: "You got this!"
-	Jan: "Now go get them."
+	Nace (NaceHappy): "You got this!"
+	Jan (JanPeace): "Now go get them."
 - "If you insist..."
 	"If you insist..."
 	Jan: "I do insist. It's the best way to make a good first impression!"
