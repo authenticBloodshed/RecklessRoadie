@@ -1,4 +1,4 @@
-[background arg="res://backstagedarknoguitar.png" fade="1.0"]
+[background arg="res://backstagedarknoguitar.png" fade="0.0"]
 join Bojan 1
 join Jan 2
 join Nace 0
@@ -123,3 +123,4 @@ Developer: Please remember the fill in the survey so I can keep building on this
 Developer: Thank you a lot and I hope to see you soon, at the full release planned for August!
 Developer: The full release is planned to be about 30 - 45 minutes long, and will have another minigame and of course lots more Joker Out shenanigans, so GET EXCITED!
 Developer: Lots of love and SSF, your developer <3
+[end_timeline]

@@ -23,6 +23,7 @@ func _on_timeout():
 	if seconds <= 0 and minutes <= 0:
 		$Label.text = "00:00"
 		get_tree().change_scene_to_file("res://LoseScreen.tscn")
+		Dialogic.start("LoseScene")
 
 #Makes sure you start the game with 1 minute and 60 seconds
 func Reset_Timer():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://qlwqvsiaried"]
+[gd_scene load_steps=14 format=3 uid="uid://qlwqvsiaried"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_0pnu1"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_htpyf"]
@@ -7,7 +7,6 @@
 [ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="4_nxn1v"]
 [ext_resource type="Script" path="res://StartButton.gd" id="5_7fwvo"]
 [ext_resource type="Script" path="res://QuitButton.gd" id="6_0dji2"]
-[ext_resource type="AudioStream" uid="uid://bkpy2nfbrggfq" path="res://Plastika remix 152bpm mp3.mp3" id="7_25p61"]
 
 [sub_resource type="Theme" id="Theme_half5"]
 default_font = ExtResource("3_l0677")
@@ -116,11 +115,6 @@ theme_override_constants/outline_size = 5
 theme_override_styles/normal = SubResource("StyleBoxEmpty_dd5i0")
 text = "Quit game!"
 script = ExtResource("6_0dji2")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_25p61")
-volume_db = 2.0
-autoplay = true
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
 [connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]
