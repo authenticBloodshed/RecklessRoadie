@@ -24,12 +24,18 @@ func _on_timeout():
 	Global.currentPlayer += 1
 	if Global.currentPlayer == 6:
 		get_tree().change_scene_to_file("res://WinScreen.tscn")
-		Dialogic.start("WinScene")
+		#Dialogic.start("WinScene")
+		
+		
 	
 	var scene: Node2D = nextScene.instantiate()
 	get_tree().root.add_child(scene)
 	
 	scene.global_position = scene.global_position + Vector2(100 * Global.currentPlayer, 0)
+	
+	if Global.currentPlayer > 6:
+		Global.currentPlayer = 1
+		
 	
 	currentScene.queue_free()
 	

@@ -40,9 +40,10 @@ energy = 7.98
 texture = ExtResource("7_k8dnp")
 texture_scale = 3.13
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." node_paths=PackedStringArray("minigameScene")]
 autostart = true
 script = ExtResource("8_m6r7t")
+minigameScene = NodePath("..")
 
 [node name="Label" type="Label" parent="Timer"]
 offset_left = 971.0
