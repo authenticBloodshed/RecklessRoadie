@@ -25,7 +25,7 @@ func _on_timeout():
 		$Label.text = "00:00"
 		minigameScene.process_mode = minigameScene.PROCESS_MODE_DISABLED
 		get_tree().change_scene_to_file("res://LoseScreen.tscn")
-		#Dialogic.start("LoseScene")
+		Dialogic.start("LoseScene")
 
 #Makes sure you start the game with 1 minute and 60 seconds
 func Reset_Timer():
