@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://dtraoe8vhbnq6"]
+
+[ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_3rwre"]
+[ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_q1dml"]
+[ext_resource type="Script" path="res://AnimationBackground.gd" id="3_2jvpj"]
+[ext_resource type="Texture2D" uid="uid://bp3ytjgg87507" path="res://Thank you screen.png" id="4_187bk"]
+[ext_resource type="FontFile" uid="uid://4vyiny430ctn" path="res://Tullamore DEMO.ttf" id="5_yhu0s"]
+[ext_resource type="Script" path="res://QuitButton.gd" id="6_j1s0r"]
+
+[sub_resource type="Theme" id="Theme_ib1mt"]
+default_font = ExtResource("5_yhu0s")
+default_font_size = 69
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_odv3g"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.5, 323.5)
+scale = Vector2(0.385, 0.217)
+texture = ExtResource("1_3rwre")
+
+[node name="Halftone" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.301961)
+position = Vector2(477, 1495)
+texture = ExtResource("2_q1dml")
+script = ExtResource("3_2jvpj")
+
+[node name="Halftone2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.301961)
+position = Vector2(477, 4503)
+texture = ExtResource("2_q1dml")
+script = ExtResource("3_2jvpj")
+
+[node name="Halftone3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.301961)
+position = Vector2(477, 7490)
+texture = ExtResource("2_q1dml")
+script = ExtResource("3_2jvpj")
+
+[node name="ThankYouScreen" type="Sprite2D" parent="."]
+position = Vector2(566, 287)
+scale = Vector2(0.514063, 0.521296)
+texture = ExtResource("4_187bk")
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -88.0
+offset_right = 112.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.897156, 0.601268)
+theme = SubResource("Theme_ib1mt")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_styles/normal = SubResource("StyleBoxEmpty_odv3g")
+text = "Clock out!"
+script = ExtResource("6_j1s0r")
+
+[connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]

@@ -23,7 +23,7 @@ func _on_timeout():
 	print("Win")
 	Global.currentPlayer += 1
 	if Global.currentPlayer == 6:
-		get_tree().change_scene_to_file("res://WinScreen.tscn")
+		get_tree().change_scene_to_file("res://ThanksScreen.tscn")
 		Dialogic.start("WinScene")
 		
 		
