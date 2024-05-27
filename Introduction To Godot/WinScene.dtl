@@ -52,13 +52,13 @@ This all worked out just like how you wanted it to.....
 You will never be a nameless fan anymore, from now on, you are the roadie that saved the show that one time Maks was sick!
 Yeah! Take that insecurities!
 [wait time="2.0"]
-And then.... before you realised it, soundcheck was already over
+And then.... before you realised it, soundcheck was already over.
 [wait time="2.0"]
 join Bojan 0
 join Jan 4
 join Jure 3
 join Kris 2
-join Nace 1
+join Nace (NaceNormal) 1
 Jan (JanPeace): "Good soundcheck everyone. Nice going on the bass Nace."
 Nace: Nace grins, looking pleased with both the praise and his performance.
 Nace (NaceHappy): "I was practicing before the show."
@@ -69,25 +69,25 @@ Bojan: "Doesn't have to be. Y'all wanna play Uno?"
 	"Let's play Jenga instead."
 	Jure: "Oh yeah. Let's! I am the Jenga master."
 	Jure: "I win most of the time. Because I'm a drummer I'm very good with my hands."
-	Nace: "I will win this time."
-	Bojan: "Nuh uh! Watch me beat all of you."
+	Nace (NaceHappy): "I will win this time."
+	Bojan (BojanFlirt): "Nuh uh! Watch me beat all of you."
 	everyone: All of them laugh softly, making sure they don't make too much noise. The audience would be able to hear us if we did.
 	Nace: "Let's see who will be crowned the Jenga king."
 	[wait time="1.0"]
-	We all played Jenga together
+	We all played Jenga together.
 	[wait time="1.0"]
 	You totally won, by the way.
 - "Sure! Why not!"
 	"Sure! why not!"
 	Bojan (BojanFlirt): "I have to warn you though, I never lose."
 	Kris: Kris looks at Bojan. He doesn't seem like he believes that.
-	Kris: "Try to hold back so the rookie has a chance to win won't you?"
+	Kris (KrisSassy): "Try to hold back so the rookie has a chance to win won't you?"
 	Jure: "I won't."
-	Jan (JanNormal): "Me neither."
+	Jan (JanPeace): "Me neither."
 	You laugh softly, making sure the audience won't hear you. They stay in the venue after soundcheck... Early entrance tickets.
-	Nace: "Let's see who will be crowned the Uno king."
+	Nace (NaceHappy): "Let's see who will be crowned the Uno king."
 	[wait time="1.0"]
-	We all played Uno together
+	We all played Uno together.
 	[wait time="1.0"]
 	You totally won, by the way.
 leave --All--
@@ -97,5 +97,5 @@ Developer: This marks the end of the global playtest! Thank you so much for play
 Developer: Please remember the fill in the survey so I can keep building on this game to make it the best it can be! Your feedback allows me to see where the game needs improving.
 Developer: Thank you a lot and I hope to see you soon, at the full release planned for August!
 Developer: The full release is planned to be about 30 - 45 minutes long, and will have another minigame and of course lots more Joker Out shenanigans, so GET EXCITED!
-Developer: Lots of love and SSF, your developer <3
+Developer: Lots of love and SSF, your developer. <3
 [end_timeline]

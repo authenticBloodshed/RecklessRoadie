@@ -21,16 +21,16 @@ At 9 am......?
 	He's bragging isn't he......
 	Bojan: "You and Maks are preeeetty much our only roadies. So we need LOTS of time to set everything up. If we don't start this early, the show can't go on!"
 	Great....... So it will all depend on me if Maks can't do something. This sure isn't nervewrecking at all..........
-Bojan (BojanNormal): "Oh. SHIT. I forgot to introduce myself."
+Bojan (BojanWorried): "Oh. SHIT. I forgot to introduce myself."
 Oh right.... He doesn't know I am a fan.
-Bojan: "I have to say\: your portfolio is super impressive! I can't believe you were a roadie for Michael Jackson!"
+Bojan (BojanNormal): "I have to say\: your portfolio is super impressive! I can't believe you were a roadie for Michael Jackson!"
 .................
-Bojan: "All this while being ONLY 26 YEARS OLD! Woah you're cool!"
+Bojan (BojanFlirt): "All this while being ONLY 26 YEARS OLD! Woah you're cool!"
 ............... I can't believe he actually read that
 And even less that he believes I actually DID all of those things....
 Bojan: "My name is Bojan! Feel free to just call me by that name, there's no need for being formal."
 "Nice to meet you, Bojan! I am so excited to start working here! Same goes for me.... You can just call me by my name."
-Bojan: "Say.... How about I show you around? I get it's your first day, so I think it'll be good if the first thing we do is show you around. Get a feeling for the band all all that."
+Bojan (BojanNormal): "Say.... How about I show you around? I get it's your first day, so I think it'll be good if the first thing we do is show you around. Get a feeling for the band all all that."
 Bojan: "Kris should still be in the bus, so let's go check up on him first."
 [background arg="res://TOURBUSINSIDE.png" fade="0.5"]
 Bojan: "KRISKO! The rookie is here!"
@@ -92,13 +92,13 @@ leave Bojan
 It seems like both Jan and Nace are here.......
 Who should I go say hi to first?
 - Nace
-	join Nace 1 [ z_index="3"]
+	join Nace (NaceNormal) 1 [ z_index="3"]
 	You walk up to Nace, he seems to be practicing one of the songs they're going to play tonight.
 	Plastika.... Nice. You love that song.
-	Nace: Nace looks up from his bass, noticing you standing there. He gives you a big smile.
+	Nace (NaceHappy): Nace looks up from his bass, noticing you standing there. He gives you a big smile.
 	"Hi!"
 	Nace: "Hello. It's so nice to see you."
-	Nace: "I was waiting for you to get here. It's been so long since we got new people on our team...."
+	Nace (NaceNormal): "I was waiting for you to get here. It's been so long since we got new people on our team...."
 	"I am very excited to be here too! Really it's an honour!"
 	Nace: "I do have bad news...."
 	[sound path="res://407696__170134__heartbeat.wav" volume="2.0"]
@@ -127,7 +127,7 @@ Who should I go say hi to first?
 	Jan: "Oh yeah. I forgot he was sick."
 	Nace: "Sorry your first day had to be like this....."
 	"Its okay. I will manage."
-	Nace: Nace smiles at you, your words seem to reassure him a little.
+	Nace (NaceHappy): Nace smiles at you, your words seem to reassure him a little.
 - Jan
 	join Jan 2 [ z_index="1"]
 	[wait time="1.0"]
@@ -148,8 +148,8 @@ Who should I go say hi to first?
 	You nod.
 	"Oh, yeah. I am the new roadie."
 	Jan: He reaches out his hand, waiting for you to shake it. You take it and shake it firmly.
-	Jan: "Well. You come just in time. Nace and I are getting ready for the show."
-	Jan: "You see. Maks is actually sick... Which is why we hired you so sporadically."
+	Jan (JanPeace): "Well. You come just in time. Nace and I are getting ready for the show."
+	Jan (JanNormal): "You see. Maks is actually sick... Which is why we hired you so sporadically."
 	Ah shit........
 	Jan: "Oof.... Setting all of this up sure is hard work."
 	"I- I'm sorry. You said who was sick?!"
@@ -182,15 +182,15 @@ Who should I go say hi to first?
 		Jan (JanNormal): "It's interesting seeing another perspective from a rookie."
 		So he clearly didn't read my portfolio....... That or he just straight up called my bullshit.
 	Jan (JanNormal): "Hey, Nace! Come say hi to the rookie!"
-	join Nace 1 [ z_index="3"]
+	join Nace (NaceNormal) 1 [ z_index="3"]
 	Nace: "Hey there!"
-	Nace: Nace doesn't spare any more words, he pulls you into a tight hug. Guess he's this cuddly with everyone on the team.
+	Nace (NaceHappy): Nace doesn't spare any more words, he pulls you into a tight hug. Guess he's this cuddly with everyone on the team.
 	Nace: "Welcome to the team!"
-Nace: "I am Nace. I play bass."
+Nace (NaceNormal): "I am Nace. I play bass."
 Jan (JanPeace): "Jan Peteh. Guitar's my passion."
-Nace: "Jan is also our token wizz kid. He knows lots of maths stuff."
+Nace (NaceHappy): "Jan is also our token wizz kid. He knows lots of maths stuff."
 Then why is Kris the one doing the finances!?
-Nace: "Have you met up with Kris and Jure yet?"
+Nace (NaceNormal): "Have you met up with Kris and Jure yet?"
 "I have met with Kris... But. Where's Jure?"
 Nace: "Jure is trying to get his drumset from the bus."
 Jan (JanNormal): "It is probably heavy.... So. It's taking a while."
@@ -269,10 +269,10 @@ The three of us ended up setting up Jure's drums.
 leave --All--
 [background arg="res://backstagelightguitar.png" fade="1.0" transition="Swipe Left To Right"]
 join Bojan (BojanNormal) 1
-join Jan 3
-join Nace 0
-join Jure 4
-join Kris 2
+join Jan (JanNormal) 3
+join Nace (NaceNormal) 0
+join Jure (JureNormal) 4
+join Kris (KrisNormal) 2
 "Phew...... That was rough work."
 "Everything going alright here too?"
 Bojan (BojanFlirt): "Look at you! You already speak like a manager!"
@@ -294,16 +294,16 @@ Awful, it would have been awful.
 [background arg="res://lights4.png" fade="0.0"]
 [wait time="2.0"]
 [background arg="res://backstagedarkguitar.png" fade="0.0"]
-Nace: "Lights work too, niceeeeeeee."
+Nace (NaceHappy): "Lights work too, niceeeeeeee."
 Kris (KrisNormal): "All things considered, this is going surprisingly well."
 .............
 You cannot tell if that is a compliment or not.
 Jan: "Let's do some last minute tuning just in case."
 [sound path="res://117679__kyster__e-open-string.wav" volume="1.0"]
-Jan: "Mine seems to be fine. How's yours, Nace?"
+Jan (JanPeace): "Mine seems to be fine. How's yours, Nace?"
 [sound path="res://660534__theendofacycle__bass-guitar-sliding-down.wav" volume="2.0"]
-Nace: "No problems here."
-Jan: "Okay so.... Drum's fine..."
+Nace (NaceHappy): "No problems here."
+Jan (JanNormal): "Okay so.... Drum's fine..."
 Jan: "Then we just have........"
 Jan: "Kris?"
 Kris: ...........
@@ -314,10 +314,10 @@ Andddd.... he's gone....
 Fuck!
 Now what?
 [sound path="res://344953__ivolipa__murmur_on_ferry_2.wav" volume="-2.0"]
-Nace: "I can already hear the audience coming in....."
+Nace (NaceNormal): "I can already hear the audience coming in....."
 You suddenly feel very nervous!
 Kris please come back soon! People are waiting for you...
-Bojan: Bojan lets out a huge sigh, guess he is nervous too.... It surprises you a little.
+Bojan (BojanWorried): Bojan lets out a huge sigh, guess he is nervous too.... It surprises you a little.
 Bojan: "2 more minutes...."
 [sound path="res://407696__170134__heartbeat.wav" volume="6.0"]
 Shit shit shit! I have to do something!

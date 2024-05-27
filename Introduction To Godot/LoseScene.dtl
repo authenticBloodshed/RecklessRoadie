@@ -7,7 +7,7 @@ Oh my god...... That was a total flop...
 I don't think I can do it before Kris returns!
 Jure: "Kris's guitar is ready now?"
 "UhhHHHH......"
-"yes..... yes... uh huh... It is.... I suppose"
+"yes..... yes... uh huh... It is.... I suppose."
 There's no way this is going to end well....
 join Kris 3 [animation="Bounce In"]
 Kris: "I'm back."
@@ -42,7 +42,7 @@ Bojan: "GIVE IT UP FOR THE CREEEEEEEWWWW!"
 [sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
 Bojan: "WOOOOO! YEAH! Joker Out crew!"
 Bojan: "During soundcheck, we always play songs that are not on the setlist, kind of as a thank you to all baby boo's who cared enough to come see us this early."
-Bojan: "This one.... is called plastika. And I think it's a song many of you will be able to relate to."
+Bojan: "This one.... is called Plastika. And I think it's a song many of you will be able to relate to."
 Bojan: "It's a song about beauty standards, and the world and how it treats you."
 Bojan: "GIVE IT UP FOR PLASTIKAAAAA!"
 [sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
@@ -61,14 +61,14 @@ Bojan: "ALLLL RIGHTY THEN! GIVE IT UP FOR PLASTIKA!"
 [sound path="res://442580__wangzhuokun__181001_005_crowd_cheer.wav" volume="0.0"]
 [music path="res://with vocal Plastika remix 152bpm mp3.mp3" fade="1.0" volume="1.0"]
 [wait time="2.0"]
-And then.... before you realised it, soundcheck was already over
+And then.... before you realised it, soundcheck was already over.
 join Bojan 2
 join Jan 3
 join Jure 1
 join Kris 4
-join Nace 0
+join Nace (NaceNormal) 0
 Jan (JanPeace): "Good soundcheck everyone. Nice going on the bass Nace."
-Nace: Nace grins, looking pleased with both the praise and his performance.
+Nace (NaceHappy): Nace grins, looking pleased with both the praise and his performance.
 Nace (NaceHappy): "I was practicing before the show."
 Humble as always.....
 Bojan: "Kris, next time, maybe spend less time slacking and more time tuning!"
@@ -81,7 +81,7 @@ Kris: "Sure do...."
 Jan: "I can't blame them for getting nervous. Happens to the best of us."
 They weren't nerves, exactly.... It was inexperience.... but you decide not to say anything about it.
 Kris: "It's alright really. Though I did feel a bit embarassed...."
-That is not alright at all....,
+That is not alright at all....
 This will follow you forever and ever! This will be what's keeping you awake at night! When you die this will be the last thing you see!
 "I am so sorry... It won't happen again I promise!"
 Nace: "It can't happen again, because now we need to wait until the openers are done before coming on stage again."
@@ -91,12 +91,12 @@ Bojan: "Doesn't have to be. Y'all wanna play Uno?"
 	"Let's play Jenga instead."
 	Jure: "Oh yeah. Let's! I am the Jenga master."
 	Jure: "I win most of the time. Because I'm a drummer I'm very good with my hands."
-	Nace: "I will win this time."
-	Bojan: "Nuh uh! Watch me beat all of you."
+	Nace (NaceNormal): "I will win this time."
+	Bojan (BojanFlirt): "Nuh uh! Watch me beat all of you."
 	everyone: All of them laugh softly, making sure they don't make too much noise. The audience would be able to hear us if we did.
 	Nace: "Let's see who will be crowned the Jenga king."
 	[wait time="1.0"]
-	We all played Jenga together
+	We all played Jenga together.
 	[wait time="1.0"]
 	You totally won, by the way.
 	Which you suppose made your image a BIT better..... You may not be able to tune guitars, but GOD are you good at not making that Jenga tower fall.
@@ -104,16 +104,16 @@ Bojan: "Doesn't have to be. Y'all wanna play Uno?"
 	"Sure! why not!"
 	Bojan (BojanFlirt): "I have to warn you though, I never lose."
 	Kris: Kris looks at Bojan. He doesn't seem like he believes that.
-	Kris: "Try to hold back so the rookie has a chance to win won't you?"
+	Kris (KrisSassy): "Try to hold back so the rookie has a chance to win won't you?"
 	Jure: "I won't."
 	Jan (JanPeace): "Me neither."
 	You laugh softly, making sure the audience won't hear you. They stay in the venue after soundcheck... Early entrance tickets.
-	Nace: "Let's see who will be crowned the Uno king."
+	Nace (NaceHappy): "Let's see who will be crowned the Uno king."
 	[wait time="1.0"]
-	We all played Uno together
+	We all played Uno together.
 	[wait time="1.0"]
 	You totally won, by the way.
-	Which you suppose made your image a BIT better..... You may not be able to tune guitars, but GOD are you good at Uno. (which, let's be honest, is mostly luck based and doesn't require much actual skill)
+	Which you suppose made your image a BIT better..... You may not be able to tune guitars, but GOD are you good at Uno. (which, let's be honest, is mostly luck based and doesn't require much actual skill).
 	But still! You won!! Go you!
 leave --All--
 join Developer 2 [animation="Slide In Up" wait="true"]
@@ -122,5 +122,5 @@ Developer: This marks the end of the global playtest! Thank you so much for play
 Developer: Please remember the fill in the survey so I can keep building on this game to make it the best it can be! Your feedback allows me to see where the game needs improving.
 Developer: Thank you a lot and I hope to see you soon, at the full release planned for August!
 Developer: The full release is planned to be about 30 - 45 minutes long, and will have another minigame and of course lots more Joker Out shenanigans, so GET EXCITED!
-Developer: Lots of love and SSF, your developer <3
+Developer: Lots of love and SSF, your developer. <3
 [end_timeline]
