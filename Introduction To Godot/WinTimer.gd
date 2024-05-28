@@ -20,12 +20,15 @@ func _process(delta):
 
 
 func _on_timeout():
-	print("Win")
+	
 	Global.currentPlayer += 1
 	if Global.currentPlayer == 6:
-		get_tree().change_scene_to_file("res://ThanksScreen.tscn")
-		Dialogic.start("WinScene")
+		currentScene.process_mode = currentScene.PROCESS_MODE_DISABLED
+		get_tree().change_scene_to_file("res://WinScreen.tscn")
+		#Dialogic.start("WinScene")
+		await get_tree().create_timer(100000000000000000).timeout
 		
+		print("Win")
 		
 	
 	var scene: Node2D = nextScene.instantiate()
@@ -33,8 +36,8 @@ func _on_timeout():
 	
 	scene.global_position = scene.global_position + Vector2(100 * Global.currentPlayer, 0)
 	
-	if Global.currentPlayer > 6:
-		Global.currentPlayer = 1
+	if Global.currentPlayer >= 6:
+		Global.currentPlayer = 0
 		
 	
 	currentScene.queue_free()
