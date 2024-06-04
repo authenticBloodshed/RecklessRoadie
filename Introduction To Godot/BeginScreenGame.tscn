@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://crvh8quebjwev"]
+[gd_scene load_steps=14 format=3 uid="uid://crvh8quebjwev"]
 
 [ext_resource type="Texture2D" uid="uid://bsju64i7cagli" path="res://tutorialbackground.png" id="1_xkp8x"]
 [ext_resource type="Texture2D" uid="uid://bodkdl4ip3hfy" path="res://halftone.png" id="2_bxe84"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://QuitButton.gd" id="6_b6tm7"]
 [ext_resource type="Texture2D" uid="uid://8rw021ba7vmq" path="res://exit.png" id="7_o82rm"]
 [ext_resource type="Texture2D" uid="uid://cwa3f2x2h37kt" path="res://backstage.png" id="8_5xio0"]
+[ext_resource type="AudioStream" uid="uid://bb5pbt5txl4e3" path="res://no vocal carpe diem remix 122bpm.wav" id="9_fqric"]
 
 [sub_resource type="Theme" id="Theme_784ac"]
 default_font = ExtResource("4_msuwu")
@@ -83,6 +84,10 @@ texture = ExtResource("7_o82rm")
 position = Vector2(303, 302)
 scale = Vector2(0.18, 0.189333)
 texture = ExtResource("8_5xio0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_fqric")
+autoplay = true
 
 [connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
 [connection signal="pressed" from="QuitButton" to="QuitButton" method="_on_pressed"]
