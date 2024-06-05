@@ -1,5 +1,5 @@
 [background arg="res://TOURBUSBojan.png" fade="0.0" transition="Simple Fade"]
-[music path="res://no vocal carpe diem remix 122bpm.wav" fade="0.5" volume="-5.0"]
+[music path="res://no vocal carpe diem remix 122bpm mp3.mp3" fade="0.5" volume="-5.0"]
 Bojan (BojanNormal): "Hey you!"
 [wait time="1.5"]
 Bojan (BojanNormal): "Over here!"
