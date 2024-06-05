@@ -42,6 +42,24 @@ position = Vector2(437, 1260)
 texture = ExtResource("2_080vd")
 script = ExtResource("3_s4umg")
 
+[node name="Halftone2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.435294)
+position = Vector2(432, 4260)
+texture = ExtResource("2_080vd")
+script = ExtResource("3_s4umg")
+
+[node name="Halftone3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.435294)
+position = Vector2(432, 7255)
+texture = ExtResource("2_080vd")
+script = ExtResource("3_s4umg")
+
+[node name="Halftone4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.435294)
+position = Vector2(432, 10248)
+texture = ExtResource("2_080vd")
+script = ExtResource("3_s4umg")
+
 [node name="Controls" type="RichTextLabel" parent="."]
 layout_mode = 0
 offset_left = 373.0
