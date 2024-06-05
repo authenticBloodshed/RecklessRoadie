@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crpj6wyyfhv31"
+path="res://.godot/imported/with vocal carpe diem remix 122bpm-[AudioTrimmer.com].wav-2467b9a501bde5e545021ed41f12192f.sample"
+
+[deps]
+
+source_file="res://with vocal carpe diem remix 122bpm-[AudioTrimmer.com].wav"
+dest_files=["res://.godot/imported/with vocal carpe diem remix 122bpm-[AudioTrimmer.com].wav-2467b9a501bde5e545021ed41f12192f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
