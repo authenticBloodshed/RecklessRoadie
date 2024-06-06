@@ -63,6 +63,7 @@ Bojan: "ALLLL RIGHTY THEN! GIVE IT UP FOR PLASTIKA!"
 [music path="res://with vocal Plastika remix 152bpm mp3.mp3" fade="1.0" volume="1.0"]
 [wait time="2.0"]
 And then.... before you realised it, soundcheck was already over.
+[background arg="res://backstagedarknoguitar.png" fade="0.5"]
 join Bojan 2
 join Jan 3
 join Jure 1
@@ -124,5 +125,6 @@ Developer: Please remember the fill in the survey so I can keep building on this
 Developer: Thank you a lot and I hope to see you soon, at the full release planned for August!
 Developer: The full release is planned to be about 30 - 45 minutes long, and will have another minigame and of course lots more Joker Out shenanigans, so GET EXCITED!
 Developer: Lots of love and SSF, your developer. <3
+[music fade="0.0" volume="0.0"]
 [music path="res://with vocal carpe diem remix 122bpm-[AudioTrimmer.com].wav" fade="0.0" volume="0.0"]
 [end_timeline]

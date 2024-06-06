@@ -89,6 +89,7 @@ Bojan: "Hmmmm..... So.... Next......"
 Bojan: "Let's go check out the backstage!"
 leave Bojan
 [background arg="res://backstagelightguitar.png" fade="1.0"]
+[music fade="0.0" volume="0.0"]
 [music path="res://Plastika remix 152bpm mp3.mp3" fade="0.5" volume="0.0"]
 It seems like both Jan and Nace are here.......
 Who should I go say hi to first?
