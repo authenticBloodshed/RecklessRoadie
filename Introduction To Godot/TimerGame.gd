@@ -21,11 +21,15 @@ func _on_timeout():
 	$Label.text = str(minutes) + ":" + str(seconds)
 	
 	#Prevents timer from going into negatives and loads the lose screen
-	if seconds <= 0 and minutes <= 0:
-		$Label.text = "00:00"
-		minigameScene.process_mode = minigameScene.PROCESS_MODE_DISABLED
-		get_tree().change_scene_to_file("res://ThanksScreen.tscn")
+	if seconds == 0 and minutes == 0:
 		Dialogic.start("LoseScene")
+		await get_tree().create_timer(100000000000000000).timeout
+		
+		$Label.text = "00:00"
+		
+		#Dialogic.start("LoseScene")
+		
+		
 		await get_tree().create_timer(100000000000000).timeout
 
 #Makes sure you start the game with 1 minute and 60 seconds
